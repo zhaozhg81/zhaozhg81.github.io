@@ -1,0 +1,411 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #6699CC;
+	background-image: url(back_gray.gif);
+	background-repeat: repeat;
+
+
+
+}
+#container {
+	width: 84%;
+	margin-top: 0%;
+	margin-right: 8%;
+	margin-bottom: 0%;
+	margin-left: 8%;
+	border-top: 6px solid #E6E6E6;
+	border-right: 3px solid #E6E6E6;
+	border-bottom: 3px solid #E6E6E6;
+	border-left: 3px solid #E6E6E6;
+	text-align: left;
+	background-color: #FFFFFF;
+
+
+
+
+
+
+}
+#navibar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	font-weight: bold;
+	color: #990000;
+	width: 100%;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-bottom-color: #c0c0c0;
+	border-top-color: #C0C0C0;
+	background-color: #F0F0F0;
+	vertical-align: bottom;
+	margin-top: 0px;
+	height: 20px;
+	background-image: url(dot.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+
+
+
+
+
+
+
+
+
+}
+#navibar ul {
+	padding: 0px 0px 0px 20px;
+	list-style-image: none;
+	list-style-type: none;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	background-image: url(dot.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+
+
+
+
+
+}
+#navibar li {
+	margin: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D3D3D3;
+	text-align: center;
+	display: inline;
+	padding: 0px 5px;
+
+
+
+
+
+
+
+
+}
+#navibar ul a:link {
+	color: #666666;
+	text-decoration: none;
+
+
+}
+
+#navibar ul a:visited {
+	color: #666666;
+	text-decoration: none;
+
+
+}
+#navibar ul a:hover {
+	text-decoration: none;
+	color: #990000;
+
+
+}
+#main {
+	background-color: #FFFFFF;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+
+
+
+
+
+}
+#main h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 120%;
+	color: #000066;
+	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	line-height: 150%;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-top-style: dashed;
+	border-bottom-style: double;
+	border-top-color: #999999;
+	border-bottom-color: #666666;
+	padding: 0px;
+
+
+
+
+
+
+
+}
+#navibar li.first {
+	color: #990000;
+}
+#navibar li.last {
+	border-right-width: 0px;
+}
+#main h2 {
+	font-size: 75%;
+	font-weight: bold;
+	color: #666666;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	line-height: 150%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+
+}
+
+#heading {
+	padding-top: 4px;
+	padding-bottom: 1px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 1px solid #E9E9E9;
+
+}
+#main p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 82%;
+	font-weight: normal;
+	color: #666666;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	line-height: 160%;
+
+}
+#footer {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	font-weight: bold;
+	color: #990000;
+	width: 100%;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-bottom-color: #c0c0c0;
+	border-top-color: #C0C0C0;
+	background-color: #F0F0F0;
+	vertical-align: bottom;
+	margin-top: 0px;
+	height: 20px;
+	background-image: url(dot.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#footer ul {
+
+	padding: 0px 0px 0px 20px;
+	list-style-image: none;
+	list-style-type: none;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	background-image: url(dot.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#footer li {
+
+	margin: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D3D3D3;
+	text-align: center;
+	display: inline;
+	padding: 0px 12px;
+}
+#footer ul a:link {
+
+	color: #666666;
+	text-decoration: none;
+}
+
+#footer ul a:visited {
+
+	color: #666666;
+	text-decoration: none;
+}
+#footer ul a:hover {
+
+	text-decoration: none;
+	color: #990000;
+}
+
+.indent {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+	white-space: pre;
+	font-size: 9pt;
+	list-style-position: outside;
+	list-style-type: none;
+
+
+
+
+
+
+}
+#main ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 82%;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	color: #666666;
+	line-height: 160%;
+	list-style-position: inside;
+	list-style-type: disc;
+
+
+
+}
+#main li {
+	margin: 0px 0px 5px;
+	padding: 0px;
+	list-style-position: outside;
+
+}
+#main ul ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	color: #666666;
+	line-height: 150%;
+	list-style-position: inside;
+	list-style-type: none;
+	font-size: 100%;
+
+}
+#main ul ul li {
+
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+}
+#gallery {
+	border: 1px solid #E9E9E9;
+	background-color: #F9F9F9;
+	padding: 15px;
+	width: 550px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+#gallerypic {
+	margin: 15px;
+	height: 130px;
+	width: 130px;
+	border: 1px solid #999999;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	background-color: #CCCCCC;
+}
+#galleryrow {
+	text-align: center;
+	clear: both;
+}
+#slidepic {
+
+	margin: 15px;
+	border: 1px solid #E9E9E9;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+#slidenav {
+	text-align: center;
+}
+#slidedescription {
+	text-align: left;
+	padding: 5px;
+	width: 500px;
+}
+#slidepic .title {
+	font-size: 95%;
+	font-weight: bold;
+}
+#gallerypic .title {
+	font-size: 70%;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 10px;
+}
+#gallerypic p {
+	font-size: 65%;
+	color: #333333;
+	line-height: 100%;
+	padding: 0px;
+	margin: 2px 0px;
+}
+
+#resume {
+	border: 1px solid #E9E9E9;
+	padding: 5px;
+	width: 550px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#resume #ressection {
+	text-align: left;
+	clear: both;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+#resume #ressection #resheader {
+	width: 100%;
+	clear: both;
+	font-size: 110%;
+	font-weight: bolder;
+}
+
+#resume #ressection #resheader h3{
+	color: #666666;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 25px 0px 0px;
+	
+}
+
+#resume #ressection #rescontent {
+	padding-left: 50px;
+	clear:both;
+	color: #666666;
+}
