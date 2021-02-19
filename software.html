@@ -52,6 +52,27 @@
     <li> R package: Multiple Testing Procedure for Grouped Hypotheses ( GroupTest ) </li>
     <br>
     <li> R package: Cdf and locfdr Assisted Testing method (CLAT) </li>
+    To install the package:<br>
+    <blockquote>
+      library(devtools)<br>
+      install_github("zhaozhg81/CLAT")<br>
+      <br>
+      Example:<br>
+      <br>
+      p <- 1000 <br>
+	   X <- c( rnorm(100, -2, 1), rnorm(100, 2, 1), rnorm(800, 0, ) ) <br>
+		q <- 0.05 <br>
+		     p.right <- pnorm( X, lower.tail=FALSE ) <br>
+				clat.right <- CLAT( p.right, q) <br>
+					      rejind <- which( clat.right$SigInd!=0 ) <br>
+							## Two-sided test <br>
+							p.right <- pnorm( X, lower.tail=FALSE ) <br>
+								   clat.right <- CLAT( p.right, q) <br>
+										 p.left <- pnorm( X, lower.tail=TRUE ) <br>
+											   clat.left <- CLAT( p.left, q) <br>
+													rejind <- c( which( clat.left$SigInd!=0 ), which(clat.right$SigInd!=0) )  <br>
+														  </blockquote>
+    
     <br>
     <li> Bayesian LASSO with Zero Inflated Mixture Prior  </li>
     <br>
