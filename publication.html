@@ -52,16 +52,35 @@
   <ul>
 
     <br>
-    <li> Y. Liao, Y. Xiang, Z. Zhao, and D. Ai (2021) Bayesian Mixed-Eﬀect Higher-Order Hidden Markov Models with Applications to Predictive Healthcare Using Electronic Health Records.
+    <li> Y. Liao, Y. Xiang, Z. Zhao, and D. Ai (2021) Bayesian Mixed Effect Higher-Order Hidden Markov Models with Applications to Predictive Healthcare Using Electronic Health Records.
       Submitted.
+      <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#HOHMM_abstract">Abstract</button>
+        <div id="HOHMM_abstract" class="collapse">
+            We consider the problem of flexible modeling of higher order hidden 
+            Markov models when the number of latent states and the nature of the serial dependence, 
+            including the true order, are unknown.  We propose flexible Bayesian methods 
+            based on tensor factorization techniques that can characterize any transition probability with a
+            specified maximal order, allowing automated selection of the important lags and 
+            capturing higher order interactions among the lags.  Theoretical results provide 
+            insights into identifiability of the emission distributions and consistency of the posterior.  
+            We design Markov chain Monte Carlo algorithms for posterior computation.  
+            In simulation experiments, the method vastly outperforms competitors not just in higher order
+            settings, but, remarkably, also in first order cases.  Practical utility is 
+            illustrated using real world applications
+        </div>            
+                
+    </div>
+    
     </li>
     
     <br>
     <li> K. Zhang, Z. Zhao, and W. Zhou (2021) BEAUTY Powered BEAST. <a href="https://arxiv.org/abs/2103.00674"> arXiv </a> 
     <div class="container">
         <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#demo">Abstract</button>
-        <div id="demo" class="collapse">
+                data-target="#BEAST_abstract">Abstract</button>
+        <div id="BEAST_abstract" class="collapse">
             We study inference about the uniform distribution with the proposed 
             binary expansion approximation of uniformity (BEAUTY) approach. 
             Through an extension of the celebrated Euler's formula, we 
@@ -89,6 +108,17 @@
             BEAST with a study of the relationship between the location and 
             brightness of stars.
         </div>            
+                <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#BEAST_bib">bibtex</button>
+        <div id="BEAST_bib" class="collapse">
+            <br>
+            @article{zhang2021beauty,<br>
+            title={BEAUTY Powered BEAST},<br>
+            author={Zhang, Kai and Zhao, Zhigen and Zhou, Wen},<br>
+            journal={arXiv preprint arXiv:2103.00674},<br>
+            year={2021}<br>
+            }<br>
+        </div>            
     </div>
     </li>
     <br>
@@ -101,11 +131,84 @@
     <br>
     
     
-    <li> Zhao, Z. (2019) Where to find needles in a haystack? TEST. Accepted. <a href="https://arxiv.org/abs/1910.02597">arXiv</li>
+    <li> Zhao, Z. (2019) Where to find needles in a haystack? TEST. Accepted. <a href="https://arxiv.org/abs/1910.02597">arXiv</a>
+        <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#CLAT_abstract">Abstract</button>
+        <div id="CLAT_abstract" class="collapse">
+            In many existing methods of multiple comparison, one starts with 
+            either Fisher's p-value or the local fdr. One commonly used p-value, 
+            defined as the tail probability exceeding the observed test statistic 
+            under the null distribution, fails to use information from the 
+            distribution under the alternative hypothesis. The targeted region 
+            of signals could be wrong when the likelihood ratio is not monotone. 
+            The oracle local fdr based approaches could be optimal because they 
+            use the probability density functions of the test statistic under 
+            both the null and alternative hypotheses. However, the data-driven 
+            version could be problematic because of the difficulty and challenge 
+            of probability density function estimation. In this paper, we propose 
+            a new method, Cdf and Local fdr Assisted multiple Testing method (CLAT), 
+            which is optimal for cases when the p-value based methods are optimal 
+            and for some other cases when p-value based methods are not. Additionally, 
+            CLAT only relies on the empirical distribution function which quickly 
+            converges to the oracle one. Both the simulations and real data analysis
+            demonstrate the superior performance of the CLAT method. Furthermore, 
+            the computation is instantaneous based on a novel algorithm and is scalable 
+            to large data sets.
+        </div>            
+                <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#CLAT_bib">bibtex</button>
+        <div id="CLAT_bib" class="collapse">
+            <br>
+            @article{zhao2019,<br>
+            title={Where to find needles in a haystack?},<br>
+            author={Zhao, Zhigen},<br>
+            journal={arXiv preprint arXiv:1910.02597},<br>
+            year={2019}<br> 
+            }<br>
+        </div>            
+
+    </div>
+</li>
+        
     <br>
 
     <li> X. Xing, Z. Zhao, and J. Liu. (2019) Controlling false discovery rate using gaussian mirrors. Journal of American Statistical Association. Tentatively accepted. 
-      <a href="https://arxiv.org/abs/1911.09761"> arXiv </a> </li>
+      <a href="https://arxiv.org/abs/1911.09761"> arXiv </a> 
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#GM_abstract">Abstract</button>
+        <div id="GM_abstract" class="collapse">
+            Simultaneously finding multiple influential variables and controlling the 
+            false discovery rate (FDR) for linear regression models is a fundamental problem. 
+            We here propose the Gaussian Mirror (GM) method, which creates for each predictor 
+            variable a pair of mirror variables by adding and subtracting a randomly generated 
+            Gaussian perturbation, and proceeds with a certain regression method, such as the 
+            ordinary least-square or the Lasso (the mirror variables can also be created after 
+            selection). The mirror variables naturally lead to test statistics effective for 
+            controlling the FDR. Under a mild assumption on the dependence among the covariates, 
+            we show that the FDR can be controlled at any designated level asymptotically. 
+            We also demonstrate through extensive numerical studies that the GM method is 
+            more powerful than many existing methods for selecting relevant variables 
+            subject to FDR control, especially for cases when the covariates are highly 
+            correlated and the influential variables are not overly sparse.
+
+        </div>            
+                <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#GM_bib">bibtex</button>
+        <div id="GM_bib" class="collapse">
+            <br>
+            
+            @article{xing2019controlling,<br>
+            title={Controlling false discovery rate using gaussian mirrors},<br>
+            author={Xing, Xin and Zhao, Zhigen and Liu, Jun S},<br>
+            journal={arXiv preprint arXiv:1911.09761},<br>
+            year={2019}<br>
+            }<br>
+        </div>            
+
+    </div>
+    </li>
     <br>
     
     
