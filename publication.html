@@ -150,8 +150,26 @@
             year={2022}<br>
             }
           </div> 	  
-		<button type="button" class="btn btn-info"><a href="https://academic.oup.com/biomet/advance-article-abstract/doi/10.1093/biomet/asac019/6548155"> Journal Link </a>  </button>
-		<button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1806.06377"> arXiv</a> </button>
+	  <button type="button" class="btn btn-info"><a href="https://academic.oup.com/biomet/advance-article-abstract/doi/10.1093/biomet/asac019/6548155"> Journal Link </a>  </button>
+	  <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1806.06377"> arXiv</a> </button>
+
+	  <button type="button" class="btn btn-info" data-toggle="collapse" 
+                  data-target="#FEBV_code">R code for F-EBV</button>
+	  <div id="FEBV_code" class="collapse">
+	    <br>
+	    <a href="./code/FEBV.R"> Click here to download the F-EBV code </a>
+	    <br>
+	    <br>
+	    Example: <br>
+	    p = 1000 <br>
+	    df = 5 <br> 
+	    sigmaSq = rgamma(p, 2, 2) <br>
+	    sSq = rchisq(p, df) * sigmaSq/df <br>
+	    <br>
+	    FEB.est = FEB( sSq, df)<br>
+	    <br>
+          </div> 	  
+
         </div>
     </li></ul>
     <br>
