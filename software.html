@@ -50,7 +50,7 @@
   <br>
   <strong> Softwares</strong>
   <ul class="cirlce">
-    <ul><li> R package: generalized signal-to-noise ratio (gSNR) </li></ul>
+    <ul><li> R package: generalized signal-to-noise ratio (gSNR) 
 	  <div class="container">       
         <button type="button" class="btn btn-info" data-toggle="collapse" 
                 data-target="#gSNR_instruction">Instruction</button>
@@ -62,6 +62,28 @@
         </blockquote>    
         </div>    
 
+		  
+            <button type="button" class="btn btn-info" data-toggle="collapse" 
+                data-target="#gSNR_example">Example</button>
+        <div id="gSNR_example" class="collapse">                    
+    Example:<br>    
+    <blockquote>    
+      p <- 1000 <br>
+	   X <- c( rnorm(100, -2, 1), rnorm(100, 2, 1), rnorm(800, 0, ) ) <br>
+		q <- 0.05 <br>
+		     p.right <- pnorm( X, lower.tail=FALSE ) <br>
+				clat.right <- CLAT( p.right, q) <br>
+					      rejind <- which( clat.right$SigInd!=0 ) <br>
+							## Two-sided test <br>
+							p.right <- pnorm( X, lower.tail=FALSE ) <br>
+								   clat.right <- CLAT( p.right, q) <br>
+										 p.left <- pnorm( X, lower.tail=TRUE ) <br>
+											   clat.left <- CLAT( p.left, q) <br>
+													rejind <- c( which( clat.left$SigInd!=0 ), which(clat.right$SigInd!=0) )  <br>
+														  </blockquote>
+        </div>        
+		  
+		  </li></ul>
     <br>
 
     <ul><li> R package: Binary Expansion Test (BET) </li></ul>
