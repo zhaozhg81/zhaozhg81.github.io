@@ -68,19 +68,45 @@
         <div id="gSNR_example" class="collapse">                    
     Example:<br>    
     <blockquote>    
-      p <- 1000 <br>
-	   X <- c( rnorm(100, -2, 1), rnorm(100, 2, 1), rnorm(800, 0, ) ) <br>
-		q <- 0.05 <br>
-		     p.right <- pnorm( X, lower.tail=FALSE ) <br>
-				clat.right <- CLAT( p.right, q) <br>
-					      rejind <- which( clat.right$SigInd!=0 ) <br>
-							## Two-sided test <br>
-							p.right <- pnorm( X, lower.tail=FALSE ) <br>
-								   clat.right <- CLAT( p.right, q) <br>
-										 p.left <- pnorm( X, lower.tail=TRUE ) <br>
-											   clat.left <- CLAT( p.left, q) <br>
-													rejind <- c( which( clat.left$SigInd!=0 ), which(clat.right$SigInd!=0) )  <br>
-														  </blockquote>
+      library(gSNR)
+
+n <- 1000
+H <- 20
+m <- n/H
+sigma <- 1
+
+p <- 20
+
+set.seed(2)
+D <- 1
+
+
+beta <- array(0, c(p, D) )
+beta <- rnorm(p, 0, 1)
+
+
+X <- matrix( rnorm(p*n), c(n, p) )
+
+
+Z <- X%*% beta
+Y <-  sin(Z[,1])*exp(Z[,1])*0.2 + sigma*rnorm(n,0,1)
+
+
+res <- gSNR( X, Y, discrete=FALSE, pvalue=TRUE)
+res$stat
+res$pvalue
+
+ORD <- order(Y)
+Y2 <- array(0, n)
+Y2[ ORD[1:floor(n/3)] ] <- 1
+Y2[ ORD[ (floor(n/3)+1):floor(2*n/3)] ] <- 2
+Y2[ ORD[ (floor(2*n/3)+1):n] ] <- 3
+  
+res.2 <- gSNR( X, Y2, discrete=TRUE, pvalue=TRUE)
+res.2$stat
+res.2$pvalue
+
+		</blockquote>
         </div>        
 		  
 		  </li></ul>
