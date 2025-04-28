@@ -1,71 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAPI Art Contest, 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .art-piece {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .art-piece img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .description {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #555;
-        }
-        audio {
-            margin-top: 10px;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAPI Art Contest, 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .art-piece {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .art-piece img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .art-piece img:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    audio {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80%;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .lightbox-close:hover {
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
 
 <h1>AAPI Art Contest, 2025</h1>
 
 <div class="gallery">
-    <!-- Example Art Piece -->
-    <div class="art-piece">
-        <img src="AAPI/2025/Photo/01.jpg" alt="Artwork 1">
-        <div class="description">
-            <p><strong>Title:</strong> Sunrise Over the Valley</p>
-            <p>Artist: Jane Doe</p>
-            <p>This piece captures the vibrant energy of a new day in a quiet valley.</p>
-        </div>
-        <audio controls>
-            <source src="AAPI/2025/audio/work1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+  <!-- Example Art Piece -->
+  <div class="art-piece">
+    <img src="AAPI/2025/Photo/01.jpg" alt="Artwork 1" onclick="openLightbox(this.src)">
+    <div class="description">
+      <p><strong>Title:</strong> Sunrise Over the Valley</p>
+      <p>Artist: Jane Doe</p>
+      <p>This piece captures the vibrant energy of a new day in a quiet valley.</p>
     </div>
+    <audio controls>
+      <source src="AAPI/2025/audio/work1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-    <!-- Repeat for each of the 26 artworks -->
+  <!-- Repeat this block for each artwork -->
 </div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightbox').style.display = "block";
+    document.getElementById('lightbox-img').src = src;
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = "none";
+  }
+</script>
 
 </body>
 </html>
