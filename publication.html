@@ -1,1228 +1,850 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-  <title>Welcome to Dr. Zhigen Zhao's web site</title>
-
-  
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-  
-  <style type="text/css">
-<!--
-@import url("default.css");
--->
-  </style>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-34447714-1']);
-    _gaq.push(['_trackPageview']);
-    
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
-    })();
-    
-  </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research &amp; Publications – Zhigen Zhao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="container">
-    <div id="navibar">
+<div class="page">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-name">Zhigen Zhao</a>
+        <div class="brand-title">
+          Associate Professor, Charles E. Beury Research Fellow
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="publication.html">Research &amp; Publications</a>
+        <a href="students.html">Students</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="software.html">Software</a>
+        <a href="other.html">Other</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <!-- Manuscripts under review -->
+    <section class="section">
+      <h3 class="section-title">Manuscript under review</h3>
       <ul>
-	<li class="first"><a href="index.html">Home</a></li>
-	<li>Research &amp; Publications</li>
-	<li><a href="students.html">Students</a></li>
-	<li><a href="teaching.html">Teaching</a></li>
-	<li><a href="software.html">Software</a></li>
-	<li><a href="other.html">Other</a></li>
+
+        <li>
+          <strong>Regularizing BELIEF with Sequency Lasso.</strong>
+          (with Zhang, W., Ni, H., Liu, Y., Zhang, K.)
+          <details>
+            <summary>Abstract</summary>
+            <p>Abstract</p>
+          </details>
+          <!-- no links provided yet -->
+        </li>
+
+        <li>
+          <strong>SorBET: A Fast and Powerful Algorithm to Test Dependence of Variables.</strong>
+          (with Zhang, W., Baiocchi, M., Li, Y., Zhang, K.)
+          <details>
+            <summary>Abstract</summary>
+            <p>Abstract</p>
+          </details>
+        </li>
+
+        <li>
+          <strong>Bayesian Analysis of Multiple Index Additive Models.</strong>
+          (with Z. Liang, J. Liu, and X. Wang)
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Nowadays, it is common to reduce the number of covariates in statistical applications with a large number of them.
+              This article presents a Bayesian Multi-Index Additive Model (BMIAM) which combines the two steps of dimension reduction and statistical modelling.
+              The indexes are reparameterized with hyperspherical coordinates and ridge functions are modelled using Bayesian B-splines.
+              A Markov-chain Monte Carlo algorithm has been developed to sample the posteriors of the proposed model.
+              Furthermore, it has been demonstrated that the model's posterior consistency of prediction remains intact under certain regularity conditions.
+              The performance of the proposed model has been demonstrated through simulations and real-world data applications,
+              which show that the proposed methods provide reliable dimension reduction space estimates and good predictability of responses.
+            </p>
+          </details>
+        </li>
+
+        <li>
+          <strong>Rate optimal multiple testing procedure in high-dimensional regression.</strong>
+          (with P. Ji) &mdash; arXiv preprint.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Multiple testing and variable selection have gained much attention in statistical theory and methodology research.
+              They are dealing with the same problem of identifying the important variables among many (Jin, 2012).
+              However, there is little overlap in the literature. Research on variable selection has been focusing on selection consistency,
+              i.e., both type I and type II errors converging to zero. This is only possible when the signals are sufficiently strong,
+              contrary to many modern applications. For the regime where the signals are both rare and weak, it is inevitable that a certain
+              amount of false discoveries will be allowed, as long as some error rate can be controlled.
+              In this paper, motivated by the research by Ji and Jin (2012) and Jin (2012) in the rare/weak regime,
+              we extend their UPS procedure for variable selection to multiple testing.
+              Under certain conditions, the new UPT procedure achieves the fastest convergence rate of marginal false non-discovery rates,
+              while controlling the marginal false discovery rate at any designated level alpha asymptotically.
+              Numerical results are provided to demonstrate the advantage of the proposed method.
+            </p>
+          </details>
+          <p>
+            <a href="https://arxiv.org/abs/1404.2961" target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <strong>Model-free multiple testing for matrix-valued predictors with false discovery control.</strong>
+          (with L. Yan and X. Zhang)
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Identifying influential variables in high-dimensional matrix-valued data while controlling the false discovery rate (FDR)
+              is a critical challenge in modern data science. We propose a novel, model-free procedure specifically designed for simultaneous
+              row and column selection in matrix predictor regression. Our approach utilizes folding selection subspaces (FSS) to formulate
+              structured hypotheses and employs data splitting to construct mirror statistics from FSS estimators. This design bypasses
+              restrictive model specification and the need for p-value computation. Key theoretical contributions include establishing
+              the asymptotic distribution of FSS estimators and proving the mirror statistic is asymptotically symmetric with respect to zero
+              under the null hypothesis. Using the symmetry, we develop a multiple hypothesis testing procedure with data-driven thresholds
+              that provably controls the FDR for row and column at the desired level asymptotically. The framework is further extended to
+              control element-wise FDR under specific structural assumptions. Extensive simulations and a real data analysis demonstrate
+              the superior performance of the proposed method over existing approaches across various settings.
+            </p>
+          </details>
+          <!-- no arxiv/journal link yet -->
+        </li>
+
+        <li>
+          <strong>On the Testing of Multiple Hypothesis in Sliced Inverse Regression.</strong>
+          (with X. Xing)
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              We consider the multiple testing of the general regression framework aiming at studying the relationship between a univariate response
+              and a p-dimensional predictor. To test the hypothesis of the effect of each predictor, we construct an Angular Balanced Statistic (ABS)
+              based on the estimator of the sliced inverse regression without assuming a model of the conditional distribution of the response.
+              According to the developed limiting distribution results in this paper, we have shown that ABS is asymptotically symmetric with respect to
+              zero under the null hypothesis. We then propose a Model-free multiple Testing procedure using Angular balanced statistics (MTA) and
+              show theoretically that the false discovery rate of this method is less than or equal to a designated level asymptotically.
+              Numerical evidence has shown that the MTA method is much more powerful than its alternatives, subject to the control
+              of the false discovery rate.
+            </p>
+          </details>
+          <p>
+            <a href="https://arxiv.org/abs/2210.05873" target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
+
+        <li>
+          <strong>BEAUTY Powered BEAST.</strong>
+          (with K. Zhang, W. Zhang, and W. Zhou)
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              We study inference about the uniform distribution with the proposed binary expansion approximation of uniformity (BEAUTY) approach.
+              Through an extension of the celebrated Euler's formula, we approximate the characteristic function of any copula distribution
+              with a linear combination of means of binary interactions marginal binary expansions.
+              This novel characterization enables a unification of many important existing tests through an approximation from some quadratic
+              form of symmetry statistics, where the deterministic weight matrix characterizes the power properties of each test.
+              To achieve a uniformly high power, we study test statistics with data-adaptive weights through an oracle approach,
+              referred to as the binary expansion adaptive symmetry test (BEAST).
+              By utilizing the properties of the binary expansion filtration, we show that the Neyman-Pearson test of uniformity can be approximated
+              by an oracle weighted sum of symmetry statistics. The BEAST with this oracle leads all existing tests we considered in empirical power
+              against all complex forms of alternatives. This oracle therefore sheds light on the potential of substantial improvements in power
+              and on the form of optimal weights under each alternative. By approximating this oracle with data-adaptive weights, we develop the BEAST
+              that improves the empirical power of many existing tests against a wide spectrum of common alternatives while providing clear interpretation
+              of the form of non-uniformity upon rejection. We illustrate the BEAST with a study of the relationship between the location and brightness of stars.
+            </p>
+          </details>
+          <p>
+            <a href="https://arxiv.org/abs/2103.00674" target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
+
       </ul>
-    </div>
+    </section>
 
-    <div id="content">
-      <br>
-      <strong> Manuscript under review </strong>
-      <ul class="circle">
-	<br>
-	<ul><li> <strong> Regularizing BELIEF with Sequency Lasso </strong> (with Zhang, W., Ni, H., Liu, Y., Zhang, K.)
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Belief_abstract">Abstract</button>
-        <div id="Belief_abstract" class="collapse">
-Abstract
-		        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Belief_bib">bibtex</button>
-        <div id="Belief_bib" class="collapse">
-            <br>
-            @article{Belief2025,<br>
-            title={Regularizing BELIEF with Sequency Lasso},<br>
-            author={Zhang, W. and Ni, H., and Zhao, Z. and Liu, Y. and Zhang, K.},<br>
-            journal={},<br>
-            year={2025}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">  <a href="">arXiv </a>   </button>
-	</div>
-	</li></ul>
+    <!-- Publications on Statistical Methodology -->
+    <section class="section">
+      <h3 class="section-title">Publications on Statistical Methodology</h3>
+      <ul>
 
-	      
-	<br>
-	<ul><li> <strong>SorBET: A Fast and Powerful Algorithm to Test Dependence of Variables</strong>(with Zhang, W., Baiocchi, M., Li, Y., Zhang, K.)
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#SorBET_abstract">Abstract</button>
-        <div id="SorBET_abstract" class="collapse">
-Abstract
-		        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#SorBET_bib">bibtex</button>
-        <div id="SorBET_bib" class="collapse">
-            <br>
-            @article{Sorbet2025,<br>
-            title={SorBET: A Fast and Powerful Algorithm to Test Dependence of Variables},<br>
-            author={Zhang, W. and Zhao, Z. and Li, Y. and Zhang, K.},<br>
-            journal={},<br>
-            year={2025}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">  <a href="">arXiv </a>   </button>
-	</div>
-	</li></ul>
+        <li>
+          <strong>Ultra-high Dimensional Threshold Selection for Quantile Feature Screening
+          with FDR Error Rate Control: A Case Study on High Blood Pressure Analysis.</strong>
+          (with S. Sanni and Y. Yu). <em>Biometrics</em>, 2025. Tentatively accepted.
+          <details>
+            <summary>Abstract</summary>
+            <p>Abstract</p>
+          </details>
+          <!-- arxiv placeholder was empty -->
+        </li>
 
+        <li>
+          <strong>Discussion on “Data Fission: Splitting a Single Data Point”.</strong>
+          <em>Journal of the American Statistical Association</em>, 2025, Volume 120, Issue 178–179, pp. 178–179.
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2416913"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
+        <li>
+          <strong>Randomized Multiarm Bandits: An Improved Adaptive Data Collection Method.</strong>
+          (with B. Ji and T. Wang).
+          <em>Statistical Analysis and Data Mining</em>, 2024, Volume 17, Issue 2, e11681.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              In many scientific experiments, multi-armed bandits are used as an adaptive data collection method.
+              However, this adaptive process can lead to a dependence that renders many commonly used statistical inference
+              methods invalid. An example of this is the sample mean, which is a natural estimator of the mean parameter but can be biased.
+              This can cause test statistics based on this estimator to have an inflated type I error rate,
+              and the resulting confidence intervals may have significantly lower coverage probabilities than their nominal values.
+              To address this issue, we propose an alternative approach called randomized multiarm bandits (rMAB).
+              This combines a randomization step with a chosen MAB algorithm, and by selecting the randomization probability appropriately,
+              optimal regret can be achieved asymptotically. Numerical evidence shows that the bias of the sample mean based
+              on the rMAB is much smaller than that of other methods. The test statistic and confidence interval produced by this method
+              also perform much better than its competitors.
+            </p>
+          </details>
+          <p>
+            <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11681"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-    <ul><li> <strong>Bayesian Analysis of Multiple Index Additive Models</strong>(with Z. Liang, J. Liu, and X. Wang)
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#BMIAM_abstract">Abstract</button>
-        <div id="BMIAM_abstract" class="collapse">
-Nowadays, it is common to reduce the number of covariates in statistical applications with a large number of them. This article presents a Bayesian Multi-Index Additive Model (BMIAM) which combines the two steps of dimension reduction and statistical modelling. The indexes are reparameterized with hyperspherical coordinates and ridge functions are modelled using Bayesian B-splines. A Markov-chain Monte Carlo algorithm has been developed to sample the posteriors of the proposed model. Furthermore, it has been demonstrated that the model's posterior consistency of prediction remains intact under certain regularity conditions. The performance of the proposed model has been demonstrated through simulations and real-world data applications, which show that the proposed methods provide reliable dimension reduction space estimates and good predictability of responses.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#BMIAM_bib">bibtex</button>
-        <div id="BMIAM_bib" class="collapse">
-            <br>
-            @article{BMIAM,<br>
-            title={Bayesian Analysis of Multiple Index Additive Models},<br>
-            author={Liang, Z. and Liu, J. and Wang, X. and Zhao, Z.},<br>
-            journal={},<br>
-            year={2025}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">  <a href="">arXiv </a>   </button>
+        <li>
+          <strong>Bayesian Mixed Effect Higher-Order Hidden Markov Models with Applications to Predictive Healthcare Using Electronic Health Records.</strong>
+          (with Y. Liao, Y. Xiang, and D. Ai).
+          <em>IISE Transactions</em>, 2025, Volume 57, Issue 2, pp. 186–198.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              The disease progression dynamics observed in electronic health records often reflect patients’ health
+              condition evolution, holding the promise of enabling the development of clinical predictive models.
+              These dynamics, however, generally display significant variability among patients, due to some critical
+              factors (e.g., gender and age) and patient-level heterogeneity. Moreover, future health state may not only depend on
+              the current state, but also more distant history states due to the complicated disease progression.
+              To capture this complex transition behavior and address mixed effects in clinical prediction problems,
+              we propose a novel and flexible Bayesian Mixed-Effect Higher-Order Hidden Markov Model (MHOHMM),
+              and develop a classifier based on MHOHMMs. A range of MHOHMMs are designed to capture different data structures
+              and the optimal one is identified by using the k-fold cross-validation approach. An effective two-stage
+              Markov chain Monte Carlo (MCMC) sampling algorithm is designed for model inference. A simulation study is conducted
+              to evaluate the performance of the proposed sampling algorithm and the MHOHMM-based classification method.
+              The practical utility of the proposed framework is demonstrated by a case study on the acute hypotensive episode
+              prediction for intensive care unit patients. Our results show that the MHOHMM-based framework provides good prediction
+              performance.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/24725854.2024.2302368"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-    </div>
-    </li></ul>
-	      
-	<br>
+        <li>
+          <strong>Controlling false discovery rate using Gaussian mirrors.</strong>
+          (with X. Xing and J. Liu).
+          <em>Journal of the American Statistical Association</em>, 2023, Volume 118, Issue 541, pp. 222–241.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Simultaneously finding multiple influential variables and controlling the
+              false discovery rate (FDR) for linear regression models is a fundamental problem.
+              We here propose the Gaussian Mirror (GM) method, which creates for each predictor
+              variable a pair of mirror variables by adding and subtracting a randomly generated
+              Gaussian perturbation, and proceeds with a certain regression method, such as the
+              ordinary least-square or the Lasso (the mirror variables can also be created after
+              selection). The mirror variables naturally lead to test statistics effective for
+              controlling the FDR. Under a mild assumption on the dependence among the covariates,
+              we show that the FDR can be controlled at any designated level asymptotically.
+              We also demonstrate through extensive numerical studies that the GM method is
+              more powerful than many existing methods for selecting relevant variables
+              subject to FDR control, especially for cases when the covariates are highly
+              correlated and the influential variables are not overly sparse.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1923510"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1911.09761"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-	      
-    <ul><li> <strong>Rate optimal multiple testing procedure in high-dimensional regression.</strong>(with P. Ji)
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#ROMT_abstract">Abstract</button>
-        <div id="ROMT_abstract" class="collapse">
-            Multiple testing and variable selection have gained much attention in statistical theory and methodology research. 
-            They are dealing with the same problem of identifying the important variables among many (Jin, 2012). 
-            However, there is little overlap in the literature. Research on variable selection has been focusing on selection consistency, 
-            i.e., both type I and type II errors converging to zero. This is only possible when the signals are sufficiently strong, 
-            contrary to many modern applications. For the regime where the signals are both rare and weak, it is inevitable that a certain 
-            amount of false discoveries will be allowed, as long as some error rate can be controlled. In this paper, motivated by the research 
-            by Ji and Jin (2012) and Jin (2012) in the rare/weak regime, we extend their UPS procedure for variable selection to multiple testing. 
-            Under certain conditions, the new UPT procedure achieves the fastest convergence rate of marginal false non-discovery rates, 
-            while controlling the marginal false discovery rate at any designated level alpha asymptotically. Numerical results are provided to 
-            demonstrate the advantage of the proposed method.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#ROMT_bib">bibtex</button>
-        <div id="ROMT_bib" class="collapse">
-            <br>
-            @article{ji2014rate,<br>
-            title={Rate optimal multiple testing procedure in high-dimensional regression},<br>
-            author={Ji, Pengsheng and Zhao, Zhigen},<br>
-            journal={arXiv preprint arXiv:1404.2961},<br>
-            year={2014}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">  <a href="https://arxiv.org/abs/1404.2961">arXiv </a>   </button>
+        <li>
+          <strong>On F-modelling based Empirical Bayes Estimation of Variances.</strong>
+          (with Y. Kwon). <em>Biometrika</em>, 2023, Volume 110, Issue 1, pp. 69–81.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              We consider the problem of empirical Bayes estimation of multiple variances when provided with sample variances.
+              Assuming an arbitrary prior on the variances, we derive different versions of the Bayes estimators using different loss functions.
+              For one particular loss function, the resulting Bayes estimator relies on the marginal cumulative distribution function of the sample variances only.
+              When replacing it with the empirical distribution function, we obtain an empirical Bayes version called F-modeling based empirical Bayes estimator of variances.
+              We provide theoretical properties of this estimator and further demonstrate its advantages through extensive simulations and real data analysis.
+            </p>
+          </details>
+          <p>
+            <a href="https://academic.oup.com/biomet/advance-article-abstract/doi/10.1093/biomet/asac019/6548155"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1806.06377"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-    </div>
-    </li></ul>
-	      
-	<br>
-	<ul><li> <strong>Model-free multiple testing for matrix-valued predictors with false discovery control
+        <li>
+          <strong>Local False Discovery Rate Based Methods for Multiple Testing of One-Way Classified Hypotheses.</strong>
+          (with S. K. Sarkar).
+          <em>Electronic Journal of Statistics</em>, 2022, Volume 16, Issue 2, pp. 6043–6085.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              This paper continues the line of research initiated in Liu et al. (2016) on
+              developing a novel framework for multiple testing of hypotheses grouped in
+              a one-way classified form using hypothesis-specific local false discovery rates (Lfdr's).
+              It is built on an extension of the standard two-class mixture model from single to multiple groups,
+              defining hypothesis-specific Lfdr as a function of the conditional Lfdr for the
+              hypothesis given that it is within a significant group and the Lfdr for the group
+              itself and involving a new parameter that measures grouping effect.
+              This definition captures the underlying group structure for the hypotheses belonging
+              to a group more effectively than the standard two-class mixture model.
+              Two new Lfdr based methods, possessing meaningful optimalities, are produced in their oracle forms.
+              One, designed to control false discoveries across the entire collection of hypotheses,
+              is proposed as a powerful alternative to simply pooling all the hypotheses into a single
+              group and using commonly used Lfdr based method under the standard single-group two-class
+              mixture model. The other is proposed as an Lfdr analog of the method of Benjamini and Bogomolov (2014)
+              for selective inference. It controls Lfdr based measure of false discoveries associated with selecting groups
+              concurrently with controlling the average of within-group false discovery proportions across the selected groups.
+              Simulation studies and real-data application show that our proposed methods are often more powerful
+              than their relevant competitors.
+            </p>
+          </details>
+          <p>
+            <a href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-16/issue-2/Local-false-discovery-rate-based-methods-for-multiple-testing-of/10.1214/22-EJS2080.full"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1712.05014"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-		</strong> (with L. Yan and X. Zhang)
-		<div class="container">        
-              	<button type="button" class="btn btn-info" data-toggle="collapse" 
-                      data-target="#Matrix_abstract">Abstract</button>
-	      
-	              <div id="Matrix_abstract" class="collapse">
-Identifying influential variables in high-dimensional matrix-valued data while controlling the false discovery rate (FDR) is a critical challenge in modern data science. We propose a novel, model-free procedure specifically designed for simultaneous row and column selection in matrix predictor regression. Our approach utilizes folding selection subspaces (FSS) to formulate structured hypotheses and employs data splitting to construct mirror statistics from FSS estimators. This design bypasses restrictive model specification and the need for p-value computation. Key theoretical contributions include establishing the asymptotic distribution of FSS estimators and proving the mirror statistic is asymptotically symmetric with respect to zero under the null hypothesis. Using the symmetry, we develop a multiple hypothesis testing procedure with data-driven thresholds that provably controls the FDR for row and column at the desired level asymptotically. The framework is further extended to control element-wise FDR under specific structural assumptions. Extensive simulations and a real data analysis demonstrate the superior performance of the proposed method over existing approaches across various settings. 
-              		</div>            
-              		<button type="button" class="btn btn-info" data-toggle="collapse" 
-                      	data-target="#Matrix_bib">bibtex</button>
-              	<div id="Matrix_bib" class="collapse">
-		<br>
-		@article{zhang2021beauty,<br>
-		title={Model-free multiple testing for matrix-valued predictors with false discovery control},<br>
-		author={Yan, L. and Zhang, X. and Zhao, Z.},<br>
-		journal={},<br>
-		year={2025}<br>
-		}
-		<br>
-              </div>            
-              
-              <button type="button" class="btn btn-info"> <a href=""> arXiv </a> </button>
-	    </div>
-	</li></ul>
-	<br>
+        <li>
+          <strong>Where to find needles in a haystack?</strong>
+          <em>TEST</em>, 2022, Volume 31, Issue 1, pp. 148–174.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              In many existing methods of multiple comparison, one starts with
+              either Fisher's p-value or the local fdr. One commonly used p-value,
+              defined as the tail probability exceeding the observed test statistic
+              under the null distribution, fails to use information from the
+              distribution under the alternative hypothesis. The targeted region
+              of signals could be wrong when the likelihood ratio is not monotone.
+              The oracle local fdr based approaches could be optimal because they
+              use the probability density functions of the test statistic under
+              both the null and alternative hypotheses. However, the data-driven
+              version could be problematic because of the difficulty and challenge
+              of probability density function estimation. In this paper, we propose
+              a new method, Cdf and Local fdr Assisted multiple Testing method (CLAT),
+              which is optimal for cases when the p-value based methods are optimal
+              and for some other cases when p-value based methods are not. Additionally,
+              CLAT only relies on the empirical distribution function which quickly
+              converges to the oracle one. Both the simulations and real data analysis
+              demonstrate the superior performance of the CLAT method. Furthermore,
+              the computation is instantaneous based on a novel algorithm and is scalable
+              to large data sets.
+            </p>
+          </details>
+          <p>
+            <a href="https://link.springer.com/article/10.1007/s11749-021-00775-x"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1910.02597"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-	<ul><li> <strong>On the Testing of Multiple Hypothesis in Sliced Inverse Regression
-		</strong> (with X. Xing)
-		<div class="container">        
-              	<button type="button" class="btn btn-info" data-toggle="collapse" 
-                      data-target="#MMM_abstract">Abstract</button>
-	      
-	              <div id="MMM_abstract" class="collapse">
-We consider the multiple testing of the general regression framework
-aiming at studying the relationship between a univariate response
-and a p-dimensional predictor. To test the hypothesis of the
-effect of each predictor, we construct an Angular Balanced Statistic
-(ABS) based on the estimator of the sliced inverse regression without
-assuming a model of the conditional distribution of the response. According
-to the developed limiting distribution results in this paper,
-we have shown that ABS is asymptotically symmetric with respect to
-zero under the null hypothesis. We then propose a Model-free multiple
-Testing procedure using Angular balanced statistics (MTA) and
-show theoretically that the false discovery rate of this method is less
-than or equal to a designated level asymptotically. Numerical evidence
-has shown that the MTA method is much more powerful than
-its alternatives, subject to the control of the false discovery rate.              		</div>            
-              		<button type="button" class="btn btn-info" data-toggle="collapse" 
-                      	data-target="#MMM_bib">bibtex</button>
-              	<div id="MMM_bib" class="collapse">
-		<br>
-			@article{zhao2022testing, <br>
-  title={On the testing of multiple hypothesis in sliced inverse regression}, <br>
-  author={Zhao, Zhigen and Xing, Xin},<br>
-  journal={arXiv preprint arXiv:2210.05873},<br>
-  year={2022}<br>
-}
-		<br>
-              </div>            
-              
-              <button type="button" class="btn btn-info"> <a href="https://arxiv.org/abs/2210.05873"> arXiv </a> </button>
-	    </div>
-	</li></ul>
-	<br>
+        <li>
+          <strong>Global testing under the sparse alternatives for single index models.</strong>
+          (with Q. Lin and J. Liu).
+          In <em>Festschrift in Honor of R. Dennis Cook</em>, 2021.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              For the single index model with Gaussian design, satisfying that rank var(E[x|y]) = 1
+              where the link function is unknown and the coefficient vector is a sparse p-dimensional unit vector with at most s nonzero entries,
+              we are interested in testing the null hypothesis that the coefficients, when viewed as a whole vector, is zero
+              against the alternative that some entries are nonzero. Assuming that var(E[x|y]) is non-vanishing,
+              we define the generalized signal-to-noise ratio (gSNR) of the model as the unique non-zero eigenvalue
+              of var(E[x|y]). We have established the detection boundary for both the single index model
+              and the single index model with additive noise. It is rather surprising that the detection boundary for the
+              single index model with additive noise matches that for linear regression models. These results pave
+              the road for thorough theoretical analysis of single/multiple index models in high dimensions.
+            </p>
+          </details>
+          <p>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-69009-0_4"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1805.01820"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-	      
-	    
-	<ul><li> <strong> BEAUTY Powered BEAST. </strong> (with K. Zhang, W. Zhang, and W. Zhou)
-	    <div class="container">        
-              <button type="button" class="btn btn-info" data-toggle="collapse" 
-                      data-target="#BEAST_abstract">Abstract</button>
-	      
-              <div id="BEAST_abstract" class="collapse">
-		We study inference about the uniform distribution with the proposed binary expansion approximation of uniformity (BEAUTY) approach. Through an extension of the celebrated Euler's formula, we 	approximate the characteristic function of any copula distribution with a linear combination of means of binary interactions marginal binary expansions. This novel characterization enables a unification of many important existing tests through an approximation from some quadratic form of symmetry statistics, where the deterministic weight matrix characterizes the power properties of each test. To achieve a uniformly high power, we study test statistics with data-adaptive weights through an oracle approach, referred to as the binary expansion adaptive symmetry test (BEAST). By utilizing the properties of the binary expansion filtration, we show that the Neyman-Pearson test of uniformity can be approximated by an oracle weighted sum of symmetry statistics. The BEAST with this oracle leads all existing tests we considered in empirical power against all complex forms of alternatives. This oracle therefore sheds light on the potential of substantial improvements in power and on the form of optimal weights under each alternative. By approximating this oracle with data-adaptive weights, we develop the BEAST that improves the empirical power of many existing tests against a wide spectrum of common alternatives while providing clear interpretation of the form of non-uniformity upon rejection. We illustrate the BEAST with a study of the relationship between the location and brightness of stars.
-              </div>            
-              <button type="button" class="btn btn-info" data-toggle="collapse" 
-                      data-target="#BEAST_bib">bibtex</button>
-              <div id="BEAST_bib" class="collapse">
-		<br>
-		@article{zhang2021beauty,<br>
-		title={BEAUTY Powered BEAST},<br>
-		author={Zhang, Wan and Zhao, Zhigen and Zhang, Kai and Zhou, Wen},<br>
-		journal={arXiv preprint arXiv:2103.00674},<br>
-		year={2021}<br>
-		}<br>
-              </div>            
-              
-              <button type="button" class="btn btn-info"> <a href="https://arxiv.org/abs/2103.00674"> arXiv </a> </button>
-	    </div>
-	</li> </ul>
-	<br>
+        <li>
+          <strong>Sparse sliced inverse regression via lasso.</strong>
+          (with Q. Lin and J. Liu).
+          <em>Journal of the American Statistical Association</em>, 2019, Volume 114, Issue 528, pp. 1726–1739.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              For multiple index models, it has recently been shown that the sliced inverse regression (SIR)
+              is consistent for estimating the sufficient dimension reduction (SDR) space if and only if p/n goes to 0,
+              where p is the dimension and n is the sample size. Thus, when p is of the same or a higher order of n,
+              additional assumptions such as sparsity must be imposed in order to ensure consistency for SIR.
+              By constructing artificial response variables made up from top eigenvectors of the estimated conditional
+              covariance matrix, we introduce a simple Lasso regression method to obtain an estimate of the SDR space.
+              The resulting algorithm, Lasso-SIR, is shown to be consistent and achieves the optimal convergence rate
+              under certain sparsity conditions when p is of order o(n²λ²), where λ is the generalized signal-to-noise ratio.
+              We also demonstrate the superior performance of Lasso-SIR compared with existing approaches via extensive
+              numerical studies and several real data examples.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2018.1520115"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1611.06655"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-    <br>
-  </ul>
+        <li>
+          <strong>On consistency and sparsity for sliced inverse regression in high dimensions.</strong>
+          (with Q. Lin and J. Liu).
+          <em>Annals of Statistics</em>, 2018, Volume 46, No. 2, pp. 580–610.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              We provide here a framework to analyze the phase transition phenomenon of slice inverse regression (SIR),
+              a supervised dimension reduction technique introduced by Li (1991). Under mild conditions, the asymptotic
+              ratio ρ = lim p/n is the phase transition parameter and the SIR estimator is consistent if and only if ρ = 0.
+              When dimension p is greater than n, we propose a diagonal thresholding screening SIR (DT-SIR) algorithm.
+              This method provides us with an estimate of the eigen-space of the covariance matrix of the conditional expectation var(E[x|y]).
+              The desired dimension reduction space is then obtained by multiplying the inverse of the covariance matrix on the eigen-space.
+              Under certain sparsity assumptions on both the covariance matrix of predictors and the loadings of the directions,
+              we prove the consistency of DT-SIR in estimating the dimension reduction space in high dimensional data analysis.
+              Extensive numerical experiments demonstrate superior performances of the proposed method in comparison to its competitors.
+            </p>
+          </details>
+          <p>
+            <a href="https://projecteuclid.org/euclid.aos/1522742430"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1507.03895"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-  
-  <strong> Publications on Statistical Methodology </strong>
-  <ul class="circle">
+        <li>
+          <strong>Sample size determination for a three-arm equivalence trial of Poisson and Negative binomial responses.</strong>
+          (with Y. W. Chang and Y. Tsong).
+          <em>Journal of Biopharmaceutical Statistics</em>, 2017, Volume 27, Issue 2, pp. 239–256.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Assessing equivalence or similarity has drawn much attention recently as many drug products have lost or will lose their patents
+              in the next few years, especially certain best-selling biologics. To claim equivalence between the test treatment and the reference treatment
+              when assay sensitivity is well established from historical data, one has to demonstrate both superiority of the test treatment over placebo
+              and equivalence between the test treatment and the reference treatment. Thus, there is urgency for practitioners to derive a practical way
+              to calculate sample size for a three-arm equivalence trial. The primary endpoints of a clinical trial may not always be continuous, but may be discrete.
+              In this paper, the authors derive power function and discuss sample size requirement for a three-arm equivalence trial with Poisson and negative binomial
+              clinical endpoints. In addition, the authors examine the effect of the dispersion parameter on the power and the sample size by varying its coefficient from
+              small to large. In extensive numerical studies, the authors demonstrate that required sample size heavily depends on the dispersion parameter.
+              Therefore, misusing a Poisson model for negative binomial data may easily lose power up to 20%, depending on the value of the dispersion parameter.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/10543406.2016.1269787"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	  	<br>
-	<ul><li> <strong>Ultra-high Dimensional Threshold Selection for Quantile Feature Screening
-with FDR Error Rate Control: A Case Study on High Blood Pressure Analysis.</strong>(with  Sanni, S. and Yu, Y.) Biometrics, 2025. Tentatively accepted.
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#quantileFDR_abstract">Abstract</button>
-        <div id="quantileFDR_abstract" class="collapse">
-Abstract
-		        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#quantileFDR_bib">bibtex</button>
-        <div id="quantileFDR_bib" class="collapse">
-            <br>
-            @article{quantile2025,<br>
-            title={Ultra-high Dimensional Threshold Selection for Quantile Feature Screening
-with FDR Error Rate Control: A Case Study on High Blood Pressure Analysis.},<br>
-            author={Sanni, S. and Yu, Y. and Zhao, Z.},<br>
-            journal={},<br>
-            year={2025}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">  <a href="">arXiv </a>   </button>
+        <li>
+          <strong>A new approach to multiple testing of grouped hypotheses.</strong>
+          (with Y. Liu and S. K. Sarkar).
+          <em>Journal of Statistical Planning and Inference</em>, 2015, Volume 179, pp. 1–14.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              A two-fold loop testing algorithm (TLTA) is proposed for testing grouped hypotheses controlling false discoveries.
+              It is constructed by decomposing a posterior measure of false discoveries across all hypotheses into within-
+              and between-group components, allowing a portion of the overall FDR level to be used to maintain control over within-group false discoveries.
+              Numerical calculations performed under certain model assumption for the hidden states of the within-group hypotheses show its superior performance
+              over its competitors that ignore the group structure, especially when only a few of the groups contain the signals, as expected in many modern applications.
+              We offer data-driven version of the TLTA by estimating the parameters using EM algorithms and provide simulation evidence of its favorable performance
+              relative to these competitors. Real data applications have also produced encouraging results for the TLTA.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378375816300854?casa_token=paFqU2hhKDsAAAAA:9zxsjcVGealzfhcs9qxwNu7lc0dznbpD6KQ0J4YU6fSnkN80E7PDAQ_a10I1TEOfiQ5Tda56lw"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-    </div>
-    </li></ul>
+        <li>
+          <strong>Capturing the severity of type II errors in high-dimensional multiple testing.</strong>
+          (with L. He and S. K. Sarkar).
+          <em>Journal of Multivariate Analysis</em>, 2015, Volume 142, pp. 106–116.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              The severity of type II errors is frequently ignored when deriving a multiple testing procedure, even though utilizing it properly
+              can greatly help in making correct decisions. This paper puts forward a theory behind developing a multiple testing procedure that can
+              incorporate the type II error severity and is optimal in the sense of minimizing a measure of false non-discoveries among all procedures
+              controlling a measure of false discoveries. The theory is developed under a general model allowing arbitrary dependence by taking a compound
+              decision theoretic approach to multiple testing with a loss function incorporating the type II error severity. We present this optimal procedure
+              in its oracle form and offer numerical evidence of its superior performance over relevant competitors.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0047259X1500189X"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	  
-	 <br>
-	  <ul><li> <strong>Discussion on ”Data Fission: Splitting a Single Data Point”
-		</strong> Journal of American Statistical Association. Volume 120, Issue 178-179, Page 178-179. 2025. 
-		  
-		  <div class="container">                  
-		  	  <button type="button" class="btn btn-info"><a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2416913"> Journal Link </a>  </button>
+        <li>
+          <strong>A Bayesian approach to construct multiple confidence intervals of selected parameters with sparse signals.</strong>
+          (with S. K. Sarkar).
+          <em>Statistica Sinica</em>, 2015, Volume 25, Number 2, pp. 725–742.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Selective inference using multiple confidence intervals is an emerging area of statistical research whose importance is being realized very recently.
+              We consider making such inference in the context of analyzing data with sparse signals in a Bayesian framework.
+              Although the traditional posterior credible intervals are immune to selection, they can have low power in detecting the true signals because of covering
+              no-signal too often if the sparse nature of the data is not properly taken into account. We demonstrate this phenomenon using a canonical Bayes model
+              with the parameters of interest following a zero-inflated mixture prior. We propose a new method of constructing multiple intervals for any given selection rule
+              taking a Bayesian decision theoretic approach under such a model. It involves the local fdr, the posterior probability of a parameter being null which is commonly
+              used in multiple testing. It controls an overall measure of error rate, the Bayes or posterior false coverage rate, at a desired level among the selected intervals.
+              We apply this method to the regression problem and demonstrate via simulations as well as data analyses that it is much more powerful in terms of enclosing zero
+              less frequently than the traditional and some alternative methods.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.jstor.org/stable/24311042?seq=1"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	  </li></ul>
+        <li>
+          <strong>Applying multiple testing procedure to detect changes in East African vegetation.</strong>
+          (with N. Clements, S. K. Sarkar, and D. Kim).
+          <em>Annals of Applied Statistics</em>, 2014, Volume 8, No. 1, pp. 286–308.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              The study of vegetation fluctuations gives valuable information toward effective land use and development.
+              We consider this problem for the East African region based on the Normalized Difference Vegetation Index (NDVI) series
+              from satellite remote sensing data collected between 1982 and 2006 over 8-kilometer grid points.
+              We detect areas with significant increasing or decreasing monotonic vegetation changes using a multiple testing procedure
+              controlling the mixed directional false discovery rate (mdFDR).
+              Specifically, we use a three-stage directional Benjamini-Hochberg (BH) procedure with proven mdFDR control under independence
+              and a suitable adaptive version of it. The performance of these procedures is studied through simulations before applying them
+              to the vegetation data. Our analysis shows increasing vegetation in the Northern hemisphere as well as coastal Tanzania and generally
+              decreasing Southern hemisphere vegetation trends, which are consistent with historical evidence.
+            </p>
+          </details>
+          <p>
+            <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-8/issue-1/Applying-multiple-testing-procedures-to-detect-change-in-East-African/10.1214/13-AOAS686.full"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1405.0785"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-	  
-	  <br>
-	  <ul><li> <strong>Randomized Multiarm Bandits: An Improved Adaptive Data Collection Method. 
-		</strong> (with B. Ji, and my student T. Wang). Statistical Analysis and Data Mining.  Volume 17, Issue 2, e11681, 2024.
-		  
-		  <div class="container">          
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#rMAB_abstract">Abstract</button>
-          <div id="rMAB_abstract" class="collapse">
-		  In many scientific experiments, multi-armed bandits are used as an adaptive data collection method. 
-		  However, this adaptive process can lead to a dependence that renders many commonly used statistical inference 
-		  methods invalid. An example of this is the sample mean, which is a natural estimator of the mean parameter but can be biased. 
-		  This can cause test statistics based on this estimator to have an inflated type I error rate, 
-		  and the resulting confidence intervals may have significantly lower coverage probabilities than their nominal values. 
-		  To address this issue, we propose an alternative approach called randomized multiarm bandits (rMAB). 
-		  This combines a randomization step with a chosen MAB algorithm, and by selecting the randomization probability appropriately, 
-		  optimal regret can be achieved asymptotically. Numerical evidence shows that the bias of the sample mean based 
-		  on the rMAB is much smaller than that of other methods. The test statistic and confidence interval produced by this method 
-		  also perform much better than its competitors.
-        </div>            
-		  	  <button type="button" class="btn btn-info"><a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11681"> Journal Link </a>  </button>
+        <li>
+          <strong>Sample size determination for a three-arm equivalence trial of normally distributed responses.</strong>
+          (with Y. W. Chang, Y. Tsong and X. Dong).
+          <em>Journal of Biopharmaceutical Statistics</em>, 2014, Volume 24, Issue 6, pp. 1190–1202.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              The equivalence assessment is often conducted through a three-arm clinical trial (namely, test, reference, and placebo) and it usually consists of three tests.
+              The first two tests are to demonstrate the superiority of the test and the reference treatment to the placebo, and they are followed by an equivalence test between
+              the test treatment and the reference treatment. When the response variable is continuous, equivalence is commonly defined in terms of mean difference, mean ratio,
+              or ratio of mean differences, that is, the mean difference of the test and the placebo to the mean difference of the reference and the placebo. These equivalence tests
+              can be performed with both a hypothesis-testing approach and a confidence-interval approach. The advantage of applying the equivalence test by ratio of mean differences
+              is that it can test both superiority of the test treatment over placebo and equivalence between the test and the reference simultaneously through a single hypothesis.
+              In this article, we derive the test statistics and the power function for the ratio of mean differences hypothesis and solve the required sample size for a three-arm
+              clinical trial. Examples of required sample size are given in this article, and are compared with the required sample size by the traditional mean difference equivalence test.
+              After a careful examination, we suggest increasing the power of the ratio of mean differences approach by appropriately adjusting the lower limit of the equivalence interval.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/10543406.2014.948552"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	  </li></ul>
-	  
-	<br>
-	<ul><li> <strong>Bayesian Mixed Effect Higher-Order Hidden Markov Models with Applications to Predictive Healthcare Using Electronic Health Records.
-		</strong>
-		 (with Y. Liao, Y. Xiang, and D. Ai). IISE Transactions. 		Volume 57, Issue 2, Page 186-198, 2025.
-		<div class="container">          
-			<button type="button" class="btn btn-info" data-toggle="collapse" 
-				data-target="#MHMM_abstract">Abstract</button>
-			<div id="MHMM_abstract" class="collapse">
-		  	<br>
-		  	The disease progression dynamics observed in electronic health records often reflect patients’ health 
-		  condition evolution, holding the promise of enabling the development of clinical predictive models. 
-		  These dynamics, however, generally display significant variability among patients, due to some critical 
-		  factors (e.g., gender and age) and patient-level heterogeneity. Moreover, future health state may not only depend on 
-		  the current state, but also more distant history states due to the complicated disease progression. 
-		  To capture this complex transition behavior and address mixed effects in clinical prediction problems, 
-		  we propose a novel and flexible Bayesian Mixed-Effect Higher-Order Hidden Markov Model (MHOHMM), 
-		  and develop a classifier based on MHOHMMs. A range of MHOHMMs are designed to capture different data structures 
-		  and the optimal one is identified by using the k-fold cross-validation approach. An effective two-stage 
-		  Markov chain Monte Carlo (MCMC) sampling algorithm is designed for model inference. A simulation study is conducted 
-		  to evaluate the performance of the proposed sampling algorithm and the MHOHMM-based classification method. 
-		  The practical utility of the proposed framework is demonstrated by a case study on the acute hypotensive episode 
-		  prediction for intensive care unit patients. Our results show that the MHOHMM-based framework provides good prediction 
-		  performance.
-			</div>            
-			<button type="button" class="btn btn-info" data-toggle="collapse" 
-				data-target="#MHMM_bib">bibtex</button>
-			<div id="MHMM_bib" class="collapse">
-            <br>
+        <li>
+          <strong>An empirical Bayes testing procedure for detecting variants in analysis of next generation sequencing data.</strong>
+          (with W. Wang and Z. Wei).
+          <em>Annals of Applied Statistics</em>, 2013, Volume 7, No. 4, pp. 2229–2248.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Because of the decreasing cost and high digital resolution, next-generation sequencing (NGS) is expected to replace the traditional
+              hybridization-based microarray technology. For genetics study, the first-step analysis of NGS data is often to identify genomic variants
+              among sequenced samples. Several statistical models and tests have been developed for variant calling in NGS study.
+              The existing approaches, however, are based on either conventional Bayesian or frequentist methods, which are unable to address the multiplicity
+              and testing efficiency issues simultaneously. In this paper, we derive an optimal empirical Bayes testing procedure to detect variants for NGS study.
+              We utilize the empirical Bayes technique to exploit the across-site information among many testing sites in NGS data.
+              We prove that our testing procedure is valid and optimal in the sense of rejecting the maximum number of nonnulls while the Bayesian false discovery rate
+              is controlled at a given nominal level. We show by both simulation studies and real data analysis that our testing efficiency can be greatly enhanced over
+              the existing frequentist approaches that fail to pool and utilize information across the multiple testing sites.
+            </p>
+          </details>
+          <p>
+            <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-7/issue-4/An-empirical-Bayes-testing-procedure-for-detecting-variants-in-analysis/10.1214/13-AOAS660.full"
+               target="_blank" rel="noopener">Journal link</a>
+            &nbsp;|&nbsp;
+            <a href="https://arxiv.org/abs/1401.2278"
+               target="_blank" rel="noopener">arXiv</a>
+          </p>
+        </li>
 
-@article{Liao:Xiang:Zhao:Ai:2024,<br>
-author = {Ying Liao, Yisha Xiang, Zhigen Zhao and Di Ai},<br>
-title = {Bayesian mixed-effect higher-order hidden Markov models with applications to predictive healthcare using electronic health records},
-journal = {IISE Transactions},<br>
-volume = {0},<br>
-number = {0},<br>
-pages = {1-13},<br>
-year = {2024}<br>
-}
-		<br>
-			</div>       
-			<button type="button" class="btn btn-info"><a href="https://www.tandfonline.com/doi/full/10.1080/24725854.2024.2302368"> Journal Link </a>  </button>
-		</div>
-	</li></ul>
-	<br>
-    <br>
-	  
-	  <ul><li> <strong> Controlling false discovery rate using gaussian mirrors. </strong> (with X. Xing and J. Liu)
-	<br>Journal of American Statistical Association, Volume 118, Issue 541, 222-241. 2023. 
-	<div class="container">          
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#GM_abstract">Abstract</button>
-          <div id="GM_abstract" class="collapse">
-            Simultaneously finding multiple influential variables and controlling the 
-            false discovery rate (FDR) for linear regression models is a fundamental problem. 
-            We here propose the Gaussian Mirror (GM) method, which creates for each predictor 
-            variable a pair of mirror variables by adding and subtracting a randomly generated 
-            Gaussian perturbation, and proceeds with a certain regression method, such as the 
-            ordinary least-square or the Lasso (the mirror variables can also be created after 
-            selection). The mirror variables naturally lead to test statistics effective for 
-            controlling the FDR. Under a mild assumption on the dependence among the covariates, 
-            we show that the FDR can be controlled at any designated level asymptotically. 
-            We also demonstrate through extensive numerical studies that the GM method is 
-            more powerful than many existing methods for selecting relevant variables 
-            subject to FDR control, especially for cases when the covariates are highly 
-            correlated and the influential variables are not overly sparse.
+        <li>
+          <strong>Empirical Bayes confidence intervals for selected parameters in high-dimensional data.</strong>
+          (with J. T. G. Hwang).
+          <em>Journal of the American Statistical Association</em>, 2013, Volume 108, Issue 502, pp. 607–618.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Modern statistical problems often involve a large number of populations and hence a large number of parameters that characterize these populations.
+              It is common for scientists to use data to select the most significant populations, such as those with the largest t statistics.
+              The scientific interest often lies in studying and making inferences regarding these parameters, called the selected parameters,
+              corresponding to the selected populations. The current statistical practices either apply a traditional procedure assuming there
+              were no selection, a practice that is not valid, or they use the Bonferroni-type procedure that is valid but very conservative and often noninformative.
+              In this article, we propose valid and sharp confidence intervals that allow scientists to select parameters and to make inferences for the selected
+              parameters based on the same data. This type of confidence interval allows the users to zero in on the most interesting selected parameters without collecting more data.
+              The validity of confidence intervals is defined as the controlling of Bayes coverage probability so that it is no less than a nominal level uniformly over a class of
+              prior distributions for the parameter. When a mixed model is assumed and the random effects are the key parameters, this validity criterion is exactly the frequentist criterion,
+              since the Bayes coverage probability is identical to the frequentist coverage probability. Assuming that the observations are normally distributed with unequal and unknown variances,
+              we select parameters with the largest t statistics. We then construct sharp empirical Bayes confidence intervals for these selected parameters, which have either a large Bayes
+              coverage probability or a small Bayes false coverage rate uniformly for a class of priors. Our intervals, applicable to any high-dimensional data, are applied
+              to microarray data and are shown to be better than all the alternatives. It is also anticipated that the same intervals would be valid for any selection rule.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2013.771102"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#GM_bib">bibtex</button>
-        <div id="GM_bib" class="collapse">
-            <br>
-            
-            @article{Xing:Zhao:Liu:2021,<br>
-            title={Controlling false discovery rate using gaussian mirrors},<br>
-            author={Xing, Xin and Zhao, Zhigen and Liu, Jun S},<br>
-            journal={arXiv preprint arXiv:1911.09761},<br>
-            year={2021}<br>
-            }<br>
-        </div>       
-              <button type="button" class="btn btn-info"><a href="      https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1923510?casa_token=lpgmI5FctnUAAAAA%3AB7OcEf_SOU3ueorEaByQXIYr3h2iz1FJ7zkC4xI3x2uyL6w0_uXC7wOwnu8OQC8wOhBmJxRdKzG0
-"> Journal Link </a>  </button>
+        <li>
+          <strong>Empirical Bayes false coverage rate controlling confidence intervals.</strong>
+          (with J. T. G. Hwang).
+          <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, 2012, Volume 74, Issue 5, pp. 871–891.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Benjamini and Yekutieli suggested that it is important to account for multiplicity correction for confidence intervals when only some of the selected intervals are reported.
+              They introduced the concept of the false coverage rate (FCR) for confidence intervals which is parallel to the concept of the false discovery rate in the multiple-hypothesis testing
+              problem and they developed confidence intervals for selected parameters which control the FCR. Their approach requires the FCR to be controlled in the frequentist's sense,
+              i.e. controlled for all the possible unknown parameters. In modern applications, the number of parameters could be large, as large as tens of thousands or even more, as in
+              microarray experiments. We propose a less conservative criterion, the Bayes FCR, and study confidence intervals controlling it for a class of distributions.
+              The Bayes FCR refers to the average FCR with respect to a distribution of parameters. Under such a criterion, we propose some confidence intervals,
+              which, by some analytic and numerical calculations, are demonstrated to have the Bayes FCR controlled at level q for a class of prior distributions, including mixtures
+              of normal distributions and zero, where the mixing probability is unknown. The confidence intervals are shrinkage-type procedures which are more efficient for the θ
+              that have a sparsity structure, which is a common feature of microarray data. More importantly, the centre of the proposed shrinkage intervals reduces much of the bias
+              due to selection. Consequently, the proposed empirical Bayes intervals are always shorter in average length than the intervals of Benjamini and Yekutieli and can be only
+              50% or 60% as long in some cases. We apply these procedures to the data of Choe and colleagues and obtain similar results.
+            </p>
+          </details>
+          <p>
+            <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9868.2012.01033.x"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-        <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1911.09761"> arXiv </a>  </button>
-    </div>
-    </li></ul>	  
-    
-    <ul><li>  <strong>On F-modelling based Empiricial Bayes Estimation of Variances. </strong> (with my student Y. Kwon)
-	<br> Biometrika, Volume 110, Issue 1, March 2023, Pages 69–81. 
-        <div class="container">       
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#FEBV_abstract">Abstract</button>
-          <div id="FEBV_abstract" class="collapse">
-            We consider the problem of empirical Bayes estimation of multiple variances when provided with sample variances. Assuming an arbitrary prior on the variances, we derive different versions of the Bayes estimators using different loss functions. For one particular loss function, the resulting Bayes estimator relies on the marginal cumulative distribution function of the sample variances only. When replacing it with the empirical distribution function, we obtain an empirical Bayes version called  F-modeling based empirical Bayes estimator of variances. We provide theoretical properties of this estimator and further demonstrate its advantages through extensive simulations and real data analysis. 
-          </div>            
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#FEBV_bib">bibtex</button>
-          <div id="FEBV_bib" class="collapse">
-            <br>
-            @article{kwon:zhao:2022,<br>
-            title={On F-Modelling based Empirical Bayes Estimation of Variances},<br>
-            author={Kwon, Yeil and Zhao, Zhigen},<br>
-            journal={Biometrika},<br>
-            year={2022}<br>
-            }
-          </div> 	  
-	  <button type="button" class="btn btn-info"><a href="https://academic.oup.com/biomet/advance-article-abstract/doi/10.1093/biomet/asac019/6548155"> Journal Link </a>  </button>
-	  <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1806.06377"> arXiv</a> </button>
+        <li>
+          <strong>Double shrinkage empirical Bayesian estimation for unknown and unequal variances.</strong>
+          <em>Statistics and Its Interface</em>, 2010, Volume 3, pp. 533–541.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              In this paper, we construct a point estimator when assuming unequal and unknown variances by using the empirical Bayes approach
+              in the classical normal mean problem. The proposed estimator shrinks both means and variances, and is thus called the double shrinkage estimator.
+              Extensive numerical studies indicate that the double shrinkage estimator has lower Bayes risk than the estimator which shrinks the means alone,
+              and the naive estimator which has no shrinkage at all. We further use a spike-in data set to assess different estimating procedures.
+              It turns out that our proposed estimator performs the best and is thus strongly recommended for applications.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.intlpress.com/site/pub/pages/journals/items/sii/content/vols/0003/0004/a011/"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	  <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#FEBV_code">R code for F-EBV</button>
-	  <div id="FEBV_code" class="collapse">
-	    <br>
-	    <a href="./code/FEBV.R"> Click here to download the F-EBV code </a>
-	    <br>
-	    <br>
-	    Example: <br>
-	    p = 1000 <br>
-	    df = 5 <br> 
-	    sigmaSq = rgamma(p, 2, 2) <br>
-	    sSq = rchisq(p, df) * sigmaSq/df <br>
-	    <br>
-	    FEB.est = FEB( sSq, df)<br>
-	    <br>
-          </div> 	  
+        <li>
+          <strong>Empirical Bayes confidence intervals shrinking both means and variances.</strong>
+          (with J. T. G. Hwang and J. Qiu).
+          <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, 2009, Volume 71, Issue 1, pp. 265–285.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              We construct empirical Bayes intervals for a large number p of means.
+              The existing intervals in the literature assume that variances are either equal or unequal but known.
+              When the variances are unequal and unknown, the suggestion is typically to replace them by unbiased estimators.
+              However, when p is large, there would be advantage in “borrowing strength” from each other.
+              We derive double-shrinkage intervals for means on the basis of our empirical Bayes estimators that shrink both the means and the variances.
+              Analytical and simulation studies and application to a real data set show that, compared with the t-intervals,
+              our intervals have higher coverage probabilities while yielding shorter lengths on average.
+              The double-shrinkage intervals are on average shorter than the intervals from shrinking the means alone and are always
+              no longer than the intervals from shrinking the variances alone. Also,
+              the intervals are explicitly defined and can be computed immediately.
+            </p>
+          </details>
+          <p>
+            <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9868.2008.00681.x"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-        </div>
-    </li></ul>
-    <br>
-   
+      </ul>
+    </section>
 
-	      <ul><li> <strong> Local False Discovery Rate Based Methods for Multiple Testing of One-Way Classified Hypotheses. </strong> (with S. K. Sarkar)
-		<br> Electronic Journal of Statistics, 2022. Vol. 16, Issue 2, Pages 6043-6085
-            <div class="container">        
-              <button type="button" class="btn btn-info" data-toggle="collapse" 
-                      data-target="#Lfdr_abstract">Abstract</button>
-              <div id="Lfdr_abstract" class="collapse">
-		This paper continues the line of research initiated in Liu et. al. (2016) on 
-            developing a novel framework for multiple testing of hypotheses grouped in 
-            a one-way classified form using hypothesis-specific local false discovery rates (Lfdr's). 
-            It is built on an extension of the standard two-class mixture model from single to multiple groups, 
-            defining hypothesis-specific Lfdr as a function of the conditional Lfdr for the 
-            hypothesis given that it is within a significant group and the Lfdr for the group 
-            itself and involving a new parameter that measures grouping effect. 
-            This definition captures the underlying group structure for the hypotheses belonging 
-            to a group more effectively than the standard two-class mixture model. Two new Lfdr based 
-            methods, possessing meaningful optimalities, are produced in their oracle forms. 
-            One, designed to control false discoveries across the entire collection of hypotheses, 
-            is proposed as a powerful alternative to simply pooling all the hypotheses into a single 
-            group and using commonly used Lfdr based method under the standard single-group two-class 
-            mixture model. The other is proposed as an Lfdr analog of the method of Benjamini and Bogomolov (2014) 
-            for selective inference. It controls Lfdr based measure of false discoveries associated with selecting groups 
-            concurrently with controlling the average of within-group false discovery proportions across the selected groups. 
-            Simulation studies and real-data application show that our proposed methods are often more powerful 
-            than their relevant competitors.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Lfdr_bib">bibtex</button>
-        <div id="Lfdr_bib" class="collapse">
-            <br>
-            @article{sarkar2017local,<br>
-            title={Local false discovery rate based methods for multiple testing of one-way classified hypotheses},<br>
-            author={Sarkar, Sanat K and Zhao, Zhigen},<br>
-            journal={Electronic Journal of Statistics},<br>
-		Volume={16}, <br>
-		Issues={2}, <br>
-		Pages = {6043-6085}, <br>
-            year={2022}<br>
-            }<br>
-        </div> 
-		    	  <button type="button" class="btn btn-info"><a href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-16/issue-2/Local-false-discovery-rate-based-methods-for-multiple-testing-of/10.1214/22-EJS2080.full"> Journal Link </a>  </button>
-            <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1712.05014"> arXiv</a> </button>
-        </div>
-        
-    </li></ul>
+    <!-- Publications on Statistical Applications -->
+    <section class="section">
+      <h3 class="section-title">Publications on Statistical Applications</h3>
+      <ul>
 
-    
-    <ul><li> <strong>Where to find needles in a haystack? </strong> <br>TEST, 2022. Vol. 31. Issue 1. 148-174.
-        <div class="container">
-          
-            
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#CLAT_abstract">Abstract</button>
-            <div id="CLAT_abstract" class="collapse">
-            In many existing methods of multiple comparison, one starts with 
-            either Fisher's p-value or the local fdr. One commonly used p-value, 
-            defined as the tail probability exceeding the observed test statistic 
-            under the null distribution, fails to use information from the 
-            distribution under the alternative hypothesis. The targeted region 
-            of signals could be wrong when the likelihood ratio is not monotone. 
-            The oracle local fdr based approaches could be optimal because they 
-            use the probability density functions of the test statistic under 
-            both the null and alternative hypotheses. However, the data-driven 
-            version could be problematic because of the difficulty and challenge 
-            of probability density function estimation. In this paper, we propose 
-            a new method, Cdf and Local fdr Assisted multiple Testing method (CLAT), 
-            which is optimal for cases when the p-value based methods are optimal 
-            and for some other cases when p-value based methods are not. Additionally, 
-            CLAT only relies on the empirical distribution function which quickly 
-            converges to the oracle one. Both the simulations and real data analysis
-            demonstrate the superior performance of the CLAT method. Furthermore, 
-            the computation is instantaneous based on a novel algorithm and is scalable 
-            to large data sets.
-            </div>            
-            
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#CLAT_bib">bibtex</button>
-            <div id="CLAT_bib" class="collapse">
-            <br>
-            @article{zhao2019,<br>
-            title={Where to find needles in a haystack?},<br>
-            author={Zhao, Zhigen},<br>
-            journal={arXiv preprint arXiv:1910.02597},<br>
-            year={2019}<br> 
-            }<br>
-            </div>
-          <button type="button" class="btn btn-info"><a href="https://link.springer.com/article/10.1007/s11749-021-00775-x"> Journal Link </a>  </button>
-          <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1910.02597">arXiv</a>  </button>
+        <li>
+          <strong>How TikTok “Locks In” Its Users with Reference to What Happened in the Homeland Version Douyin Application.</strong>
+          (with Y. Yang, Z. Li, S. (Zi Tong) Peng, L. Dou, C. Li, and Y. Wang).
+          <em>Antitrust Report</em>, pp. 2–23, November 2023.
+        </li>
 
-    </div>
-      </li></ul>
-        <br>
-    
-    <ul><li><strong> Global testing under the sparse alternatives for single index models.</strong> (with Q. Lin and J. Liu)
-      <br>Festschrift in Honor of R. Dennis Cook. 2021.
-    
-        <div class="container">
-        
+        <li>
+          <strong>A Feature Sampling Strategy for Analysis of High Dimensional Genomic Data.</strong>
+          (with J. Zhang, K. Zhang, and Z. Wei).
+          <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>, 2019, Volume 16, No. 2, pp. 434–441.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              With the development of high throughput technology, it has become feasible and common to profile tens of thousands of gene activities simultaneously.
+              These genomic data typically have sample size of hundreds or fewer, which is much less than the feature size (number of genes).
+              In addition, the genes, in particular the ones from the same pathway, are often highly correlated.
+              These issues impose a great challenge for selecting meaningful genes from a large number of (correlated) candidates in many genomic studies.
+              Quite a few methods have been proposed to attack this challenge. Among them, regularization-based techniques, e.g., lasso, become much more appealing,
+              because they can do model fitting and variable selection at the same time. However, the lasso regression has its known limitations.
+              One is that the number of genes selected by the lasso couldn't exceed the number of samples.
+              Another limitation is that, if causal genes are highly correlated, the lasso tends to select only one or few genes from them. Biologists, however,
+              desire to identify them all. To overcome these limitations, we present here a novel, robust, and stable variable selection method.
+              Through simulation studies and a real application to the transcriptome data, we demonstrate the superiority of the proposed method in selecting
+              highly correlated causal genes. We also provide some theoretical justifications for this feature sampling strategy based on the mean and variance analyses.
+            </p>
+          </details>
+          <p>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8126867"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#GlobalTesting_abstract">Abstract</button>
-        <div id="GlobalTesting_abstract" class="collapse">
-            For the single index model with Gaussian design, satisfying that rank var(E[x|y])=1 
-            where the link function is unknown and the coefficient vector is a sparse p-dimensional unit vector with at most s nonzero entries,
-            we are interested in testing the null hypothesis that the coefficients, when viewed as a whole vector, is zero 
-            against the alternative that some entries are nonzero. Assuming that var(E[x|y]) is non-vanishing, 
-            we define the generalized signal-to-noise ratio (gSNR)  of the model as the unique non-zero eigenvalue 
-            of var(E[x|y]). We have established the detection boundary for both the single index model
-            and the single index model with additive noise. It is rather surprising that the detection boundary for the 
-            single index model with additive noise matches that for linear regression models. These results pave 
-            the road for thorough theoretical analysis of single/multiple index models in high dimensions.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#GlobalTesting_bib">bibtex</button>
-        <div id="GlobalTesting_bib" class="collapse">
-            <br>
-            @article{lin2018global,<br>
-            title={Global testing under the sparse alternatives for single index models},<br>
-            author={Lin, Qian and Zhao, Zhigen and Liu, Jun S},<br>
-            journal={arXiv preprint arXiv:1805.01820},<br>
-            year={2018}<br>
-            }<br>
-        </div>            
-		<button type="button" class="btn btn-info"><a href="https://link.springer.com/chapter/10.1007/978-3-030-69009-0_4"> Journal Link </a>  </button>
-		<button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1805.01820"> arXiv </a>  </button>
-    </div>        
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Sparse sliced inverse regression via lasso. </strong> (with Q. Lin and J. Liu)
-	<br> Journal of American Statistical Association, 2019. Vol. 114, Issue 528, Pages 1726-1739.    
-        
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#LassoSIR_abstract">Abstract</button>
-        <div id="LassoSIR_abstract" class="collapse">
-            For multiple index models, it has recently been shown that the sliced inverse regression (SIR) 
-            is consistent for estimating the sufficient dimension reduction (SDR) space if and only if p/n goes to 0, 
-            where p is the dimension and n is the sample size. Thus, when p is of the same or a higher order of n, 
-            additional assumptions such as sparsity must be imposed in order to ensure consistency for SIR. 
-            By constructing artificial response variables made up from top eigenvectors of the estimated conditional 
-            covariance matrix, we introduce a simple Lasso regression method to obtain an estimate of the SDR space. 
-            The resulting algorithm, Lasso-SIR, is shown to be consistent and achieves the optimal convergence rate 
-            under certain sparsity conditions when p is of order o(n^2\lambda^2), where \lambda is the generalized signal-to-noise ratio. 
-            We also demonstrate the superior performance of Lasso-SIR compared with existing approaches via extensive 
-            numerical studies and several real data examples. Supplementary materials for this article are available       
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#LassoSIR_bib">bibtex</button>
-        <div id="LassoSIR_bib" class="collapse">
-            <br>
-            @article{lin2019sparse,<br>
-            title={Sparse sliced inverse regression via lasso},<br>
-            author={Lin, Qian and Zhao, Zhigen and Liu, Jun S},<br>
-            journal={Journal of the American Statistical Association},<br>
-            volume={114},<br>
-            number={528},<br>
-            pages={1726--1739},<br>
-            year={2019},<br>
-            publisher={Taylor \& Francis}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info"><a href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2018.1520115"> Journal Link </a>  </button>
-        <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1611.06655"> arXiv </a>  </button>
+        <li>
+          <strong>Network analysis in detection of early-stage mild cognitive impairment.</strong>
+          (with H. Ni, J. Qin, L. Zhou, J. Wang and F. Hou).
+          <em>Physica A: Statistical Mechanics and its Applications</em>, 2017, Volume 478, pp. 113–119.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              The detection and intervention for early-stage mild cognitive impairment (EMCI) is of vital importance.
+              However, the pathology of EMCI remains largely unknown, making it a challenge to the clinical diagnosis.
+              In this paper, the resting-state functional magnetic resonance imaging (rs-fMRI) data derived from EMCI patients and normal
+              controls are analyzed using the complex network theory. We construct the functional connectivity (FC)
+              networks and employ the local false discovery rate approach to successfully detect the abnormal functional connectivities appeared in the EMCI patients.
+              Our results demonstrate the abnormal functional connectivities have appeared in the EMCI patients, and the affected brain regions are mainly distributed
+              in the frontal and temporal lobes. In addition, to quantitatively characterize the statistical properties of FCs in the complex network, we herein employ
+              the entropy of the degree distribution index and some other well-established measures, i.e., clustering coefficient and the efficiency of graph.
+              Eventually, we found that the index, better than the widely used measures, may serve as an assistant and potential marker for the detection of EMCI.
+            </p>
+          </details>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0378437117301905"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-    </div>
+        <li>
+          <strong>Determining candidate single nucleotide polymorphisms in acquired laryngotracheal stenosis.</strong>
+          (with M. Anis, J. Khurana, E. Krynetskiy and A. Soliman).
+          <em>The Laryngoscope</em>, 2018, Volume 128, Issue 3, pp. E111–E116.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Despite wide adoption of strategies to prevent injury from prolonged intubation and tracheotomy, acquired laryngotracheal stenosis (ALTS) has
+              not disappeared. ALTS’ persistence may be due to patient factors that confer unique susceptibility for some.
+              We sought to identify genetic markers in genes associated with wound healing that could be associated with ALTS.
+            </p>
+          </details>
+          <p>
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/lary.26981"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-	    
-    </li></ul>
-    <br>
+        <li>
+          <strong>Translational genomics of acquired laryngotracheal stenosis.</strong>
+          (with M. Anis, J. Khurana, E. Krynetskiy and A. Soliman).
+          <em>The Laryngoscope</em>, 2014, Volume 124, Issue 5, pp. E175–E179.
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              Acquired laryngotracheal stenosis (ALTS) results from abnormal mucosal wound healing after laryngeal and/or tracheal injury.
+              Patients with ALTS often present late after significant reduction of the airway lumen and onset of symptoms.
+              Motivated by the need for earlier detection of affected patients, we sought to investigate genetic markers for ALTS that
+              would identify susceptible patients.
+            </p>
+          </details>
+          <p>
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/lary.24382"
+               target="_blank" rel="noopener">Journal link</a>
+          </p>
+        </li>
 
-    
+      </ul>
+    </section>
 
-    <ul><li> <strong> On consistency and sparsity for sliced inverse regression in high dimensions. </strong> (with Q. Lin and J. Liu)
-      <br>Annals of Statistics, 2018. Vol. 46, No. 2, Pages 580-610. 
-            <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#DTSIR_abstract">Abstract</button>
-        <div id="DTSIR_abstract" class="collapse">
-            We provide here a framework to analyze the phase transition phenomenon of slice inverse regression (SIR), 
-            a supervised dimension reduction technique introduced by Li (1991). Under mild conditions, the asymptotic 
-            ratio rho=lim p/n is the phase transition parameter and the SIR estimator is consistent if and only if rho=0. 
-            When dimension p is greater than n, we propose a diagonal thresholding screening SIR (DT-SIR) algorithm. 
-            This method provides us with an estimate of the eigen-space of the covariance matrix of the conditional expectation var(E[x|y]). 
-            The desired dimension reduction space is then obtained by multiplying the inverse of the covariance matrix on the eigen-space. 
-            Under certain sparsity assumptions on both the covariance matrix of predictors and the loadings of the directions, 
-            we prove the consistency of DT-SIR in estimating the dimension reduction space in high dimensional data analysis. 
-            Extensive numerical experiments demonstrate superior performances of the proposed method in comparison to its competitors.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#DTSIR_bib">bibtex</button>
-        <div id="DTSIR_bib" class="collapse">
-            <br>
-            @article{lin2018consistency,<br>
-            title={On consistency and sparsity for sliced inverse regression in high dimensions},<br>
-            author={Lin, Qian and Zhao, Zhigen and Liu, Jun S and others},<br>
-            journal={The Annals of Statistics},<br>
-            volume={46},<br>
-            number={2},<br>
-            pages={580--610},<br>
-            year={2018},<br>
-            publisher={Institute of Mathematical Statistics}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info"> <a href="https://projecteuclid.org/euclid.aos/1522742430"> Journal Link. </a>  </button>
-        <button type="button" class="btn btn-info"><a href="https://arxiv.org/abs/1507.03895"> arXiv </a>  </button>
+  </main>
 
-    </div>
-
-    </li></ul>
-
-    <br>
-
-    <ul><li> <strong> Sample size determination for a three-arm equivalence trial of Poisson and Negative binomial responses. </strong> (with my student Y. W. Chang and Y. Tsong) <br>Journal of Biopharmaceutical Statistics, 2017. Vol. 27, Issue 2, 239-256. 
-    
-       <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JBS2017_abstract">Abstract</button>
-        <div id="JBS2017_abstract" class="collapse">
-Assessing equivalence or similarity has drawn much attention recently as many drug products have lost or will lose their patents in the next few years, especially certain best-selling biologics. To claim equivalence between the test treatment and the reference treatment when assay sensitivity is well established from historical data, one has to demonstrate both superiority of the test treatment over placebo and equivalence between the test treatment and the reference treatment. Thus, there is urgency for practitioners to derive a practical way to calculate sample size for a three-arm equivalence trial. The primary endpoints of a clinical trial may not always be continuous, but may be discrete. In this paper, the authors derive power function and discuss sample size requirement for a three-arm equivalence trial with Poisson and negative binomial clinical endpoints. In addition, the authors examine the effect of the dispersion parameter on the power and the sample size by varying its coefficient from small to large. In extensive numerical studies, the authors demonstrate that required sample size heavily depends on the dispersion parameter. Therefore, misusing a Poisson model for negative binomial data may easily lose power up to 20%, depending on the value of the dispersion parameter.
-   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JBS2017_bib">bibtex</button>
-        <div id="JBS2017_bib" class="collapse">
-            <br>
-            @article{chang2017sample,<br>
-            title={Sample size determination for a three-arm equivalence trial of Poisson and negative binomial responses},<br>
-            author={Chang, Yu-Wei and Tsong, Yi and Zhao, Zhigen},<br>
-            journal={Journal of biopharmaceutical statistics},<br>
-            volume={27},<br>
-            number={2},<br>
-            pages={239--256},<br>
-            year={2017},<br>
-            publisher={Taylor \& Francis}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">      <a href="https://www.tandfonline.com/doi/full/10.1080/10543406.2016.1269787?casa_token=jPLVEiT06MYAAAAA%3AkpPM17MrVij0r8v9q8dL3qiv1o-uxuM9YsW2RGgy1m51SnfUd3kOn0c6_tDSNt_buhVtLAe52i_D"> Journal Link </a>
- </button>
-
-    </div>
-  
-    </li></ul>
-
-	  <br>
-
-    <ul><li> <strong> A new approach to multiple testing of grouped hypotheses. </strong> (with my student Y. Liu and S. K. Sarkar)
-	<br> Journal of Statistical Planning and Inference, 2015. Vol. 179, 1-14.  
-        <div class="container">        
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-                  data-target="#GROUP_abstract">Abstract</button>
-          <div id="GROUP_abstract" class="collapse">
-            A two-fold loop testing algorithm (TLTA) is proposed for testing grouped hypotheses controlling false discoveries. It is constructed by decomposing a posterior measure of false discoveries across all hypotheses into within- and between-group components, allowing a portion of the overall FDR level to be used to maintain control over within-group false discoveries. Numerical calculations performed under certain model assumption for the hidden states of the within-group hypotheses show its superior performance over its competitors that ignore the group structure, especially when only a few of the groups contain the signals, as expected in many modern applications. We offer data-driven version of the TLTA by estimating the parameters using EM algorithms and provide simulation evidence of its favorable performance relative to these competitors. Real data applications have also produced encouraging results for the TLTA.
-          </div>            
-          <button type="button" class="btn btn-info" data-toggle="collapse" 
-		  data-target="#GROUP_bib">bibtex</button>
-	  <div id="GROUP_bib" class="collapse">
-	    <br>
-            @article{LIU20161,<br>
-            title = {A new approach to multiple testing of grouped hypotheses},<br>
-            journal = {Journal of Statistical Planning and Inference},<br>
-            volume = {179},<br>
-            pages = {1-14},<br>
-            year = {2016},<br>
-            issn = {0378-3758},<br>
-            doi = {https://doi.org/10.1016/j.jspi.2016.07.004},<br>
-            url = {https://www.sciencedirect.com/science/article/pii/S0378375816300854},<br>
-            author = {Yanping Liu and Sanat K. Sarkar and Zhigen Zhao},<br>
-            keywords = {False discovery rate, Grouped hypotheses, Large-scale multiple testing},<br>
-            }<br>       
-          </div>            
-          <button type="button" class="btn btn-info">  <a href="https://www.sciencedirect.com/science/article/pii/S0378375816300854?casa_token=paFqU2hhKDsAAAAA:9zxsjcVGealzfhcs9qxwNu7lc0dznbpD6KQ0J4YU6fSnkN80E7PDAQ_a10I1TEOfiQ5Tda56lw"> Journal Link </a> </button>
-	  
-	</div>
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Capturing the severity of Type II errors in high-dimensional multiple testing. </strong> (with L. He and S. K. Sarkar) <br>Journal of Multivariate Analysis, 2015. Vol. 142, 106-116. 
-      
-       <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JMV2015_abstract">Abstract</button>
-        <div id="JMV2015_abstract" class="collapse">
-The severity of type II errors is frequently ignored when deriving a multiple testing procedure, even though utilizing it properly can greatly help in making correct decisions. This paper puts forward a theory behind developing a multiple testing procedure that can incorporate the type II error severity and is optimal in the sense of minimizing a measure of false non-discoveries among all procedures controlling a measure of false discoveries. The theory is developed under a general model allowing arbitrary dependence by taking a compound decision theoretic approach to multiple testing with a loss function incorporating the type II error severity. We present this optimal procedure in its oracle form and offer numerical evidence of its superior performance over relevant competitors.
-
-
-   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JMV2015_bib">bibtex</button>
-        <div id="JMV2015_bib" class="collapse">
-            <br>
-            @article{HE2015106,<br>
-            title = {Capturing the severity of type II errors in high-dimensional multiple testing},<br>
-            journal = {Journal of Multivariate Analysis},<br>
-            volume = {142},<br>
-            pages = {106-116},<br>
-            year = {2015},<br>
-            issn = {0047-259X},<br>
-            doi = {https://doi.org/10.1016/j.jmva.2015.08.005},<br>
-            url = {https://www.sciencedirect.com/science/article/pii/S0047259X1500189X},<br>
-            author = {Li He and Sanat K. Sarkar and Zhigen Zhao},<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">               <a href="https://www.sciencedirect.com/science/article/pii/S0047259X1500189X"> Journal Link </a>
- </button>
-
-    </div>
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> A Bayesian approach to construct multiple confidence intervals of selected parameters with sparse signals. </strong> (with S. K. Sarkar)
-	<br> Statistica Sinica, 2015. Volume 25, Number 2, 725-742. 
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Sinica2015_abstract">Abstract</button>
-        <div id="Sinica2015_abstract" class="collapse">
-            Selective inference using multiple confidence intervals is an emerging area of statistical research whose importance is being realized very recently. We consider making such inference in the context of analyzing data with sparse signals in a Bayesian framework. Although the traditional posterior credible intervals are immune to selection, they can have low power in detecting the true signals because of covering no-signal too often if the sparse nature of the data is not properly taken into account. We demonstrate this phenomenon using a canonical Bayes model with the parameters of interest following a zero-inflated mixture prior. We propose a new method of constructing multiple intervals for any given selection rule taking a Bayesian decision theoretic approach under such a model. It involves the local fdr, the posterior probability of a parameter being null which is commonly used in multiple testing. It controls an overall measure of error rate, the Bayes or posterior false coverage rate, at a desired level among the selected intervals. We apply this method to the regression problem and demonstrate via simulations as well as data analyses that it is much more powerful in terms of enclosing zero less frequently than the traditional and some alternative methods.
-
-   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Sinica2015_bib">bibtex</button>
-        <div id="Sinica2015_bib" class="collapse">
-            <br>
-            @article{10.2307/24311042,<br>
-            ISSN = {10170405, 19968507},<br>
-            URL = {http://www.jstor.org/stable/24311042},<br>
-            author = {Zhigen Zhao and Sanat K. Sarkar},<br>
-            journal = {Statistica Sinica},<br>
-            number = {2},<br>
-            pages = {725--741},<br>
-            publisher = {Institute of Statistical Science, Academia Sinica},<br>
-            title = {A BAYESIAN APPROACH TO CONSTRUCTING MULTIPLE CONFIDENCE INTERVALS OF SELECTED PARAMETERS WITH SPARSE SIGNALS},<br>
-            volume = {25},<br>
-            year = {2015}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">              <a href="https://www.jstor.org/stable/24311042?seq=1">Journal Link </a>
-          </button>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; 2025 Zhigen Zhao</div>
+      <div class="footer-links">
+        <a href="https://www.sbm.temple.edu/dept/statistics/" target="_blank" rel="noopener">
+          Statistics Department
+        </a>
+        <a href="https://sbm.temple.edu/" target="_blank" rel="noopener">
+          The Fox School
+        </a>
+        <a href="https://www.temple.edu/" target="_blank" rel="noopener">
+          Temple University
+        </a>
       </div>
-    </li></ul>
-    
-    <br>
-
-    <ul><li> <strong> Applying multiple testing procedure to detect changes in east African vegetation. </strong> (with N. Clements, S. K. Sarkar, and D. Kim) <br> Annals of Applied Statistics, 2014. Volume 8, No.1, 286-308.
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#AOAS2014_abstract">Abstract</button>
-        <div id="AOAS2014_abstract" class="collapse">
-            The study of vegetation fluctuations gives valuable information toward effective land use and development. 
-            We consider this problem for the East African region based on the Normalized Difference Vegetation Index (NDVI) series 
-            from satellite remote sensing data collected between 1982 and 2006 over 8-kilometer grid points. We detect areas with significant 
-            increasing or decreasing monotonic vegetation changes using a multiple testing procedure controlling the mixed directional false discovery rate (mdFDR). 
-            Specifically, we use a three-stage directional Benjamini-Hochberg (BH) procedure with proven mdFDR control under independence and a suitable adaptive version of it. 
-            The performance of these procedures is studied through simulations before applying them to the vegetation data. 
-            Our analysis shows increasing vegetation in the Northern hemisphere as well as coastal Tanzania and generally decreasing Southern hemisphere vegetation trends, 
-            which are consistent with historical evidence.
-        </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#AOAS2014_bib">bibtex</button>
-        <div id="AOAS2014_bib" class="collapse">
-            <br>
-            @article{10.1214/13-AOAS686,<br>
-            author = {Nicolle Clements and Sanat K. Sarkar and Zhigen Zhao and Dong-Yun Kim},<br>
-            title = {{Applying multiple testing procedures to detect change in East African vegetation}},<br>
-            volume = {8},<br>
-            journal = {The Annals of Applied Statistics},<br>
-            number = {1},<br>
-            publisher = {Institute of Mathematical Statistics},<br>
-            pages = {286 -- 308},<br>
-            keywords = {directional false discovery rate, East Africa vegetation, False discovery rate, NDVI},<br>
-            year = {2014},<br>
-            doi = {10.1214/13-AOAS686},<br>
-            URL = {https://doi.org/10.1214/13-AOAS686}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">         <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-8/issue-1/Applying-multiple-testing-procedures-to-detect-change-in-East-African/10.1214/13-AOAS686.full"> Journal Link </a>
- </button>
-            <button type="button" class="btn btn-info">          <a href="https://arxiv.org/abs/1405.0785"> arXiv </a>
- </button>  
-
     </div>
+  </footer>
 
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Sample size determination for a three-arm equivalence trial of normally distributed responses. </strong>(with my student Y. W. Chang, Y. Tsong and X. Dong) <br> Journal of Biopharmaceutical Statistics, 2014. Vol. 24, Issue 6, 1190-1202. 
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JBS2014_abstract">Abstract</button>
-            
-        <div id="JBS2014_abstract" class="collapse">
-            The equivalence assessment is often conducted through a three-arm clinical trial (namely, test, reference, and placebo) and it usually consists of three tests. The first two tests are to demonstrate the superiority of the test and the reference treatment to the placebo, and they are followed by an equivalence test between the test treatment and the reference treatment. When the response variable is continuous, equivalence is commonly defined in terms of mean difference, mean ratio, or ratio of mean differences, that is, the mean difference of the test and the placebo to the mean difference of the reference and the placebo. These equivalence tests can be performed with both a hypothesis-testing approach and a confidence-interval approach. The advantage of applying the equivalence test by ratio of mean differences is that it can test both superiority of the test treatment over placebo and equivalence between the test and the reference simultaneously through a single hypothesis. In this article, we derive the test statistics and the power function for the ratio of mean differences hypothesis and solve the required sample size for a three-arm clinical trial. Examples of required sample size are given in this article, and are compared with the required sample size by the traditional mean difference equivalence test. After a careful examination, we suggest increasing the power of the ratio of mean differences approach by appropriately adjusting the lower limit of the equivalence interval.
-        </div>
-            
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#JBS2014_bib">bibtex</button>
-            <div id="JBS2014_bib" class="collapse">
-            <br>
-            @article{chang2014sample,<br>
-            title={Sample size determination for a three-arm equivalence trial of normally distributed responses},<br>
-            author={Chang, Yu-Wei and Tsong, Yi and Dong, Xiaoyu and Zhao, Zhigen},<br>
-            journal={Journal of biopharmaceutical statistics},<br>
-            volume={24},<br>
-            number={6},<br>
-            pages={1190--1202},<br>
-            year={2014},<br>
-            publisher={Taylor \& Francis}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">     <a href="https://www.tandfonline.com/doi/full/10.1080/10543406.2014.948552?casa_token=kbG_Q5i_JuAAAAAA%3A3qNn3AfQfZ-ickQNrVjNiv1Mxkk4RdpCHtgTYOya7oveImPdkwHQr58McBZXo0me-OzeeSarE0BQ"> Journal Link </a>
-
- </button>
-
-    </div>
-    
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> An empirical Bayes testing procedure for detecting variants in analysis of next generation sequencing data. </strong> (with W. Wang and Z. Wei) <br> Annals of Applied Statistics, 2013. Volume 7, No.4, 2229-2248. 
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#AOAS2013_abstract">Abstract</button>
-        <div id="AOAS2013_abstract" class="collapse">
-            Because of the decreasing cost and high digital resolution, next-generation sequencing (NGS) is expected to replace the traditional hybridization-based microarray technology. For genetics study, the first-step analysis of NGS data is often to identify genomic variants among sequenced samples. Several statistical models and tests have been developed for variant calling in NGS study. The existing approaches, however, are based on either conventional Bayesian or frequentist methods, which are unable to address the multiplicity and testing efficiency issues simultaneously. In this paper, we derive an optimal empirical Bayes testing procedure to detect variants for NGS study. We utilize the empirical Bayes technique to exploit the across-site information among many testing sites in NGS data. We prove that our testing procedure is valid and optimal in the sense of rejecting the maximum number of nonnulls while the Bayesian false discovery rate is controlled at a given nominal level. We show by both simulation studies and real data analysis that our testing efficiency can be greatly enhanced over the existing frequentist approaches that fail to pool and utilize information across the multiple testing sites.       </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#AOAS2013_bib">bibtex</button>
-        <div id="AOAS2013_bib" class="collapse">
-            <br>
-            @article{zhao2013empirical,<br>
-            title={An empirical Bayes testing procedure for detecting variants in analysis of next generation sequencing data},<br>
-            author={Zhao, Zhigen and Wang, Wei and Wei, Zhi},<br>
-            journal={The Annals of Applied Statistics},<br>
-            pages={2229--2248},<br>
-            year={2013},<br>
-            publisher={JSTOR}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">          <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-7/issue-4/An-empirical-Bayes-testing-procedure-for-detecting-variants-in-analysis/10.1214/13-AOAS660.full"> Journal Link </a>
- </button>
-            <button type="button" class="btn btn-info">          <a href="https://arxiv.org/abs/1401.2278"> arXiv </a>
- </button>  
-            
-
-    </div>
-    
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong>Empirical Bayes confidence intervals for selected parameters in high dimensional data. </strong> (with J. T. Hwang) <br>Journal of American Statistical Association, 2013. Volume 108, Issue 502, 607-618. 
-    
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#HwangZhao2013_abstract">Abstract</button>
-        <div id="HwangZhao2013_abstract" class="collapse">
- Modern statistical problems often involve a large number of populations and hence a large number of parameters that characterize these populations. 
- It is common for scientists to use data to select the most significant populations, such as those with the largest t statistics. 
- The scientific interest often lies in studying and making inferences regarding these parameters, called the selected parameters, 
- corresponding to the selected populations. The current statistical practices either apply a traditional procedure assuming there 
- were no selection, a practice that is not valid, or they use the Bonferroni-type procedure that is valid but very conservative and often noninformative. 
- In this article, we propose valid and sharp confidence intervals that allow scientists to select parameters and to make inferences for the selected 
- parameters based on the same data. This type of confidence interval allows the users to zero in on the most interesting selected parameters without collecting more data. 
- The validity of confidence intervals is defined as the controlling of Bayes coverage probability so that it is no less than a nominal level uniformly over a class of
- prior distributions for the parameter. When a mixed model is assumed and the random effects are the key parameters, this validity criterion is exactly the frequentist criterion, 
- since the Bayes coverage probability is identical to the frequentist coverage probability. Assuming that the observations are normally distributed with unequal and unknown variances, 
- we select parameters with the largest t statistics. We then construct sharp empirical Bayes confidence intervals for these selected parameters, which have either a large Bayes 
- coverage probability or a small Bayes false coverage rate uniformly for a class of priors. Our intervals, applicable to any high-dimensional data, are applied 
- to microarray data and are shown to be better than all the alternatives. It is also anticipated that the same intervals would be valid for any selection rule. 
- Supplementary materials for this article are available online.
-        </div>  
-            
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#HwangZhao2013_bib">bibtex</button>
-        <div id="HwangZhao2013_bib" class="collapse">
-            <br>
-            @article{hwang2013empirical,<br>
-            title={Empirical Bayes confidence intervals for selected parameters in high-dimensional data},<br>
-            author={Hwang, JT Gene and Zhao, Zhigen},<br>
-            journal={Journal of the American Statistical Association},<br>
-            volume={108},<br>
-            number={502},<br>
-            pages={607--618},<br>
-            year={2013},<br>
-            publisher={Taylor \& Francis}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">            <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2013.771102?casa_token=pLUg3WXiAbUAAAAA%3ACQInIx4qDSCUfDtGuMu65OY4cTsTRSkOJQ993Fgv1NWhx9p-EdPzj-fcy-56tNMOtIls5vvBHVVx">Journal Link</a>
-
- </button>
-
-    </div>
-    
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Empirical Bayes false coverate rate  controlling confidence interval. </strong> (with J. T. Hwang) <br> Journal of Royal Statistical Society, Series B, 2012. Volume 74, Issue 5, 871-891. 
-    
-    <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#ZhaoHwang2012_abstract">Abstract</button>
-        <div id="ZhaoHwang2012_abstract" class="collapse">
- Benjamini and Yekutieli suggested that it is important to account for multiplicity correction for confidence intervals when only some of the selected intervals are reported. 
- They introduced the concept of the false coverage rate (FCR) for confidence intervals which is parallel to the concept of the false discovery rate in the multiple-hypothesis testing 
- problem and they developed confidence intervals for selected parameters which control the FCR. Their approach requires the FCR to be controlled in the frequentist's sense, 
- i.e. controlled for all the possible unknown parameters. In modern applications, the number of parameters could be large, as large as tens of thousands or even more, as in 
- microarray experiments. We propose a less conservative criterion, the Bayes FCR, and study confidence intervals controlling it for a class of distributions. 
- The Bayes FCR refers to the average FCR with respect to a distribution of parameters. Under such a criterion, we propose some confidence intervals, 
- which, by some analytic and numerical calculations, are demonstrated to have the Bayes FCR controlled at level q for a class of prior distributions, including mixtures 
- of normal distributions and zero, where the mixing probability is unknown. The confidence intervals are shrinkage-type procedures which are more efficient for the theta 
- that have a sparsity structure, which is a common feature of microarray data. More importantly, the centre of the proposed shrinkage intervals reduces much of the bias 
- due to selection. Consequently, the proposed empirical Bayes intervals are always shorter in average length than the intervals of Benjamini and Yekutieli and can be only 
- 50% or 60% as long in some cases.  We apply these procedures to the data of Choe and colleagues and obtain similar results.        
-
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#ZhaoHwang2012_bib">bibtex</button>
-        <div id="ZhaoHwang2012_bib" class="collapse">
-            <br>
-            @article{zhao2012empirical,<br>
-            title={Empirical Bayes false coverage rate controlling confidence intervals},<br>
-            author={Zhao, Zhigen and Gene Hwang, JT},<br>
-            journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},<br>
-            volume={74},<br>
-            number={5},<br>
-            pages={871--891},<br>
-            year={2012},<br>
-            publisher={Wiley Online Library}<br>
-            }<br>
-
-        </div>            
-        <button type="button" class="btn btn-info">         <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9868.2012.01033.x?casa_token=iduD_Z65b6YAAAAA%3A7DSBTqojBOYa_pjhQwpecSu4lfutrnWHnlA89MqRUh7QHkKaPYSUp1ZBFPWhVM3Jr7DcQJeogoN1SLg">Journal Link </a>
- </button>
-
-    </div>
-    
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Double shrinkage empirical Bayesian estimation for unknown and unequal variances. </strong> <br> Statistics and Its Interface, 2010. Volume 3, 533-541. 
-    <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Zhao2010_abstract">Abstract</button>
-        <div id="Zhao2010_abstract" class="collapse">
-            In this paper, we construct a point estimator when assuming unequal and unknown variances by using the empirical Bayes approach in the classical normal mean problem. The proposed estimator shrinks both means and variances, and is thus called the double shrinkage estimator. Extensive numerical studies indicate that the double shrinkage estimator has lower Bayes risk than the estimator which shrinks the means alone, and the naive estimator which has no shrinkage at all. We further use a spike-in data set to assess different estimating procedures. It turns out that our proposed estimator performs the best and is thus strongly recommended for applications.
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Zhao2010_bib">bibtex</button>
-        <div id="Zhao2010_bib" class="collapse">
-            <br>
-            @article{zhao2010double,    <br>    
-            title={Double shrinkage empirical Bayesian estimation for unknown and unequal variances},<br>
-            author={Zhao, Zhigen},<br>
-            journal={Statistics and Its Interface},<br>
-            volume={3},<br>
-            number={4},<br>
-            pages={533--541},<br>
-            year={2010},<br>
-            publisher={International Press of Boston}<br>
-            }<br>
-        
-        </div>            
-        <button type="button" class="btn btn-info">     <a href="https://www.intlpress.com/site/pub/pages/journals/items/sii/content/vols/0003/0004/a011/"> Journal Link </a>
- </button>
-
-    </div>
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Empirical Bayes confidence intervals shrinking both means and variances. </strong> (with J. T. Hwang and J. Qiu) <br> Journal of Royal Statistical Society, Series B, 2009. Volume 71, Issue 1, 265-285. 
-    
-        <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#HQZ_abstract">Abstract</button>
-        <div id="HQZ_abstract" class="collapse">
-            We construct empirical Bayes intervals for a large number p of means. 
-            The existing intervals in the literature assume that variances inline image are either equal or unequal but known. 
-            When the variances are unequal and unknown, the suggestion is typically to replace them by unbiased estimators. 
-            However, when p is large, there would be advantage in 'borrowing strength' from each other. 
-            We derive double-shrinkage intervals for means on the basis of our empirical Bayes estimators that shrink both the means and the variances. 
-            Analytical and simulation studies and application to a real data set show that, compared with the t-intervals, 
-            our intervals have higher coverage probabilities while yielding shorter lengths on average. 
-            The double-shrinkage intervals are on average shorter than the intervals from shrinking the means alone and are always 
-            no longer than the intervals from shrinking the variances alone. Also, 
-            the intervals are explicitly defined and can be computed immediately.        
-        </div>            
-                <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#HQZ_bib">bibtex</button>
-        <div id="HQZ_bib" class="collapse">
-            <br>
-            @article{hqz2009empirical,<br>
-            title={Empirical Bayes confidence intervals shrinking both means and variances},<br>
-            author={Gene Hwang, JT and Qiu, Jing and Zhao, Zhigen},<br>
-            journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},<br>
-            volume={71},<br>
-            number={1},<br>
-            pages={265--285},<br>
-            year={2009},<br>
-            publisher={Wiley Online Library}<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info"> <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9868.2008.00681.x?casa_token=KMC35jK9kt8AAAAA%3AzaN5OQg-Q1ALXpXHoGgNVR707JeK0IT5IPpMhxLo7vGxNy7o4E5KCG4aHmNoHmPH-GAUIkEcfuBh4zA"> Journal Link </a> </button>
-
-    </div>
-
-    </li></ul>
-    <br>
-  </ul>
-
-  <strong>Publications on Statistical Applications </strong>
-
-  <ul class="circle">
-   <br>
-    <ul> <li> <strong> How TikTok “Locks In” Its Users with Reference to What Happened in the Homeland Version Douyin Application </strong> (with Yang Yang, Zi'ang Li, Sabrina (Zi Tong) Peng, Liyu Dou, Changyu Li, and Yinqi Wang) <br> Antitrust report, 2-23, November, 2023. 
-    </li></ul>
-	  
-    <br>
-    <ul> <li> <strong> A Feature Sampling Strategy for Analysis of High Dimensional Genomic Data. </strong> (with J. Zhang, K. Zhang, and Z. Wei) <br> IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2019. Vol. 16, No. 2, 434-441. 
-      
-      <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#IEEE2019_abstract">Abstract</button>
-        <div id="IEEE2019_abstract" class="collapse">
-	  With the development of high throughput technology, it has become feasible and common to profile tens of thousands of gene activities simultaneously. These genomic data typically have sample size of hundreds or fewer, which is much less than the feature size (number of genes). In addition, the genes, in particular the ones from the same pathway, are often highly correlated. These issues impose a great challenge for selecting meaningful genes from a large number of (correlated) candidates in many genomic studies. Quite a few methods have been proposed to attack this challenge. Among them, regularization-based techniques, e.g., lasso, become much more appealing, because they can do model fitting and variable selection at the same time. However, the lasso regression has its known limitations. One is that the number of genes selected by the lasso couldn't exceed the number of samples. Another limitation is that, if causal genes are highly correlated, the lasso tends to select only one or few genes from them. Biologists, however, desire to identify them all. To overcome these limitations, we present here a novel, robust, and stable variable selection method. Through simulation studies and a real application to the transcriptome data, we demonstrate the superiority of the proposed method in selecting highly correlated causal genes. We also provide some theoretical justifications for this feature sampling strategy based on the mean and variance analyses.
-	</div>
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#IEEE2019_bib">bibtex</button>
-        <div id="IEEE2019_bib" class="collapse">
-          <br>
-          @article{zhang2017feature,<br>
-          title={A feature sampling strategy for analysis of high dimensional genomic data},<br>
-          author={Zhang, Jie and Zhao, Zhigen and Zhang, Kai and Wei, Zhi},<br>
-          journal={IEEE/ACM transactions on computational biology and bioinformatics},<br>
-          volume={16},<br>
-          number={2},<br>
-          pages={434--441},<br>
-          year={2017},<br>
-          publisher={IEEE}<br>
-          }<br>
-        </div>            
-        <button type="button" class="btn btn-info">   <a href="https://ieeexplore.ieee.org/abstract/document/8126867?casa_token=uHymaOtLAmMAAAAA:TsECpjjNHLrGM9FldtLkiiDXBlWfCiy1FWogKLgOiMUE0NfanfpPbFxZQe7ZXdeAkWMRNpaN7w"> Journal Link </a> 
-	</button>
-	
-      </div>
-    </li></ul>
-    
-    <br>
-    <ul><li> <strong> Network analysis in detection of early-stage mild cognitive impairment. </strong> (with H. Ni, J. Qin, L. Zhou, J. Wang and F. Hou) <br> Physica A: Statistical Mechanics and its Applications, 2017. Vol. 142, 113-119.
-      <div class="container">        
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#PhysicaA2017_abstract">Abstract</button>
-        <div id="PhysicaA2017_abstract" class="collapse">
-            The detection and intervention for early-stage mild cognitive impairment (EMCI) is of vital importance.
-            However, the pathology of EMCI remains largely unknown, making it be challenge to the clinical diagnosis. 
-            In this paper, the resting-state functional magnetic resonance imaging (rs-fMRI) data derived from EMCI patients and normal 
-            controls are analyzed using the complex network theory. We construct the functional connectivity (FC) 
-            networks and employ the local false discovery rate approach to successfully detect the abnormal functional connectivities appeared in the EMCI patients. 
-            Our results demonstrate the abnormal functional connectivities have appeared in the EMCI patients, and the affected brain regions are mainly distributed 
-            in the frontal and temporal lobes In addition, to quantitatively characterize the statistical properties of FCs in the complex network, we herein employ 
-            the entropy of the degree distribution index and some other well-established measures, i.e., clustering coefficient and the efficiency of graph. 
-            Eventually, we found that the  index, better than the widely used  and  measures, may serve as an assistant and potential marker for the detection of EMCI.
-   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#PhysicaA2017_bib">bibtex</button>
-        <div id="PhysicaA2017_bib" class="collapse">
-            <br>
-            @article{NI2017113,<br>
-            title = {Network analysis in detection of early-stage mild cognitive impairment},<br>
-            journal = {Physica A: Statistical Mechanics and its Applications},<br>
-            volume = {478},<br>
-            pages = {113-119},<br>
-            year = {2017},<br>
-            issn = {0378-4371},<br>
-            doi = {https://doi.org/10.1016/j.physa.2017.02.044},<br>
-            url = {https://www.sciencedirect.com/science/article/pii/S0378437117301905},<br>
-            author = {Huangjing Ni and Jiaolong Qin and Luping Zhou and Zhigen Zhao and Jun Wang and Fengzhen Hou},<br>
-            }<br>
-        </div>            
-        <button type="button" class="btn btn-info">
-	  <a href="https://www.sciencedirect.com/science/article/pii/S0378437117301905?casa_token=3ACyeXv7NBAAAAAA:-YZeISjW8ydfDlHn3asuR6jRhDGQyJcbf2SEuNUWj5bR_inzsvqFIQfQQ97X2CE3vLfpcWQBJQ"> Journal Link </a>
-        </button>
-      </div>  
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Determining candidate single nucleotide polymorphisms in acquired laryngotracheal stenosis. </strong> (with M. Anis, J. Khurana, E. Krynetskiy and A. Soliman) <br> The Laryngoscope, 2018. Vol. 128, Issue 3, 111-116.<br>
-	    <div class="container">        
-		    <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Laryngoscope2018_abstract">Abstract</button>
-		    <div id="Laryngoscope2018_abstract" class="collapse">
-          		Despite wide adoption of strategies to prevent injury from prolonged intubation and tracheotomy, acquired laryngotracheal stenosis (ALTS) has 
-			not disappeared. ALTS’ persistence may be due to patient factors that confer unique susceptibility for some. We sought to identify 
-			genetic markers in genes associated with wound healing that could be associated with ALTS.The detection and intervention for early-stage 
-			mild cognitive impairment (EMCI) is of vital importance.
-	   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Laryngoscope2018_bib">bibtex</button>
-        <div id="Laryngoscope2018_bib" class="collapse">
-            <br>
-		@article{anis2018determining,<br>
-		title={Determining candidate single nucleotide polymorphisms in acquired laryngotracheal stenosis},<br>
-		author={Anis, Mursalin M and Krynetskaia, Natalia and Zhao, Zhigen and Krynetskiy, Evgeny and Soliman, Ahmed MS},<br>
-		journal={The Laryngoscope},<br>
-		volume={128},<br>
-		number={3},<br>
-		pages={E111--E116},<br>
-		year={2018},<br>
-		publisher={Wiley Online Library}<br>
-		}<br>
-        </div>            
-        <button type="button" class="btn btn-info">
-	  <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/lary.26981?casa_token=kkEiKiNjJRkAAAAA%3AEpQwmXVqviODMqdUf8cq74AtszOuWeKaWEAdCYS6pgjciV6XkhfpS69mSH0RE4xMMofPDJSBEQM0G5M"> Journal Link </a>
-        </button>
-	    </div>	    
-    </li></ul>
-    <br>
-    
-    <ul><li> <strong> Translational genomics of acquired laryngotracheal stenosis. </strong> (with M. Anis, J. Khurana, E. Krynetskiy and A. Soliman) <br> The Laryngoscope, 2014. Vol. 124, Issue 5, 175-179.<br>
-	    <div class="container">        
-	    	<button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Laryngoscope2014_abstract">Abstract</button>
-        <div id="Laryngoscope2014_abstract" class="collapse">
-		Acquired laryngotracheal stenosis (ALTS) results from abnormal mucosal wound healing after laryngeal and/or tracheal injury. 
-		Patients with ALTS often present late after significant reduction of the airway lumen and onset of symptoms. 
-		Motivated by the need for earlier detection of affected patients, we sought to investigate genetic markers for ALTS that 
-		would identify susceptible patients.            
-   </div>
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Laryngoscope2014_bib">bibtex</button>
-        <div id="Laryngoscope2014_bib" class="collapse">
-            <br>
-		@article{anis2014translational,<br>
-		title={Translational genomics of acquired laryngotracheal stenosis},<br>
-		author={Anis, Mursalin M and Zhao, Zhigen and Khurana, Jasvir and Krynetskiy, Evgeny and Soliman, Ahmed MS},<br>
-		journal={The Laryngoscope},<br>
-		volume={124},<br>
-		number={5},<br>
-		pages={E175--E179},<br>
-		year={2014},<br>
-		publisher={Wiley Online Library}<br>
-		}<br>
-        </div>            
-        <button type="button" class="btn btn-info">
-	  <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/lary.24382?casa_token=C0R-AkwM7zoAAAAA%3A8Kpmyjqc9xcPoYJlTuyRTWVwmYdHQ_P0Kk61y881A0zCIg8AwPOAL3jGDdWslodznDmCVHHRwbduQEI">Journal Link </a>
-        </button>
-	    </div>
-    </li></ul>
-    <br>   
-  </ul> 
-  
-<div>
-<p align="center">
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=8206980; 
-var sc_invisible=0; 
-var sc_security="146ad3df"; 
-</script>
-<script type="text/javascript"
-src="http://www.statcounter.com/counter/counter.js"></script>
-<noscript><div class="statcounter"><a title="free hit
-counter" href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/8206980/0/146ad3df/0/"
-alt="free hit counter"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-</p>
 </div>
-
-
-<div id="footer">
-<ul>
-  <li><a href="http://www.sbm.temple.edu/dept/statistics/">Statistics
-Department </a></li>
-  <li><a href="http://sbm.temple.edu">The Fox School</a></li>
-  <li><a href="http://www.temple.edu">Temple University</a></li>
-</ul>
-</div>
-</div>
-
-</body></html>
+</body>
+</html>

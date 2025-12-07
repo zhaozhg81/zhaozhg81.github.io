@@ -1,237 +1,192 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-  <title>Welcome to Dr. Zhigen Zhao's web site</title>
-
-  
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-  
-  <style type="text/css">
-<!--
-@import url("default.css");
--->
-  </style>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-34447714-1']);
-    _gaq.push(['_trackPageview']);
-    
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    
-  </script>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software – Zhigen Zhao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="container">
-<div id="navibar">
-<ul>
-  <li class="first"><a href="index.html">Home</a></li>
-  <li><a href="publication.html">Research &amp; Publications</a></li>
-  <li><a href="students.html">Students</a></li>
-  <li><a href="teaching.html">Teaching</a></li>
-  <li>Software</li>
-  <li><a href="other.html">Other</a></li>
-</ul>
-</div>
+<div class="page">
 
-<div id="content">
-  <br>
-  <strong> Softwares</strong>
-  <ul class="cirlce">
-	    <br>
-    <ul><li> Randomized Multiarm Bandits: An Improved Adaptive Data Collection Method <a href="https://github.com/zhaozhg81/rMAB"><br> Available on github </a> </li></ul><br>
-
-	  
-	      <ul><li> R package: Rgpt: An R package to talk to chatgpt from R
-	  <div class="container">       
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Rgpt_instruction">Instruction</button>
-        <div id="Rgpt_instruction" class="collapse">            
-				This package provides the API for R talking to chatgpt. To use this package, it is required to obtain a OPENAI_API_KEY. To get this, you should obtain an account of Open API. On the account page, go to Personal -> View API Keys -> Create new secret key.
-
-Copy the key. Edit the file .Renviron, and set
-
-OPENAI_API_KEY= the key created.
-
-        To install the package:
-		<br>
-        <blockquote>
-            library(devtools)<br>
-            install_github("zhaozhg81/Rgpt")<br>		
-       </blockquote>    
-        </div>    		  
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#Rgpt_example">Example</button>
-        <div id="Rgpt_example" class="collapse">                    
-    Example:<br>    
-    <blockquote>    
-      library(Rgpt) <br>
-	    Rgpt("Using R, wirte a sample code for linear model.")
-
-<br>
-	    x=matrix(rnorm(12), nrow=3,ncol=4)
-
-<br>
-	    LatexTable( 3, 4, t( round(x, digits=3) ) )
-	    <br>
-		</blockquote>
-        </div>        
-		  
-		  </li></ul>
-
-	  
-    <ul><li> R package: generalized signal-to-noise ratio (gSNR) 
-	  <div class="container">       
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#gSNR_instruction">Instruction</button>
-        <div id="gSNR_instruction" class="collapse">            
-        To install the package:<br>
-        <blockquote>
-            library(devtools)<br>
-            install_github("zhaozhg81/gSNR")<br>
-        </blockquote>    
-        </div>    
-
-		  
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#gSNR_example">Example</button>
-        <div id="gSNR_example" class="collapse">                    
-    Example:<br>    
-    <blockquote>    
-      library(gSNR) <br>
-
-n <- 1000<br>
-H <- 20<br>
-m <- n/H<br>
-sigma <- 1<br>
-<br>
-p <- 20<br>
-<br>
-set.seed(2)<br>
-D <- 1<br>
-
-
-beta <- array(0, c(p, D) )<br>
-beta <- rnorm(p, 0, 1)<br>
-
-<br>
-X <- matrix( rnorm(p*n), c(n, p) )<br>
-<br>
-
-Z <- X%*% beta<br>
-Y <-  sin(Z[,1])*exp(Z[,1])*0.2 + sigma*rnorm(n,0,1)<br>
-
-<br>
-res <- gSNR( X, Y, discrete=FALSE, pvalue=TRUE)<br>
-res$stat<br>
-res$pvalue<br>
-<br>
-ORD <- order(Y)<br>
-Y2 <- array(0, n)<br>
-Y2[ ORD[1:floor(n/3)] ] <- 1<br>
-Y2[ ORD[ (floor(n/3)+1):floor(2*n/3)] ] <- 2<br>
-Y2[ ORD[ (floor(2*n/3)+1):n] ] <- 3<br>
-  <br>
-res.2 <- gSNR( X, Y2, discrete=TRUE, pvalue=TRUE)<br>
-res.2$stat<br>
-res.2$pvalue<br>
-<br>
-		</blockquote>
-        </div>        
-		  
-		  </li></ul>
-    <br>
-
-    <ul><li> R package: Binary Expansion Test (BET) </li></ul>
-    <br>
-    <ul><li> R package: LassoSIR: Sparsed Sliced Inverse Regression via Lasso ( LassoSIR ) </li></ul>
-    <br>
-    <ul><li> R package: Multiple Testing Procedure for Grouped Hypotheses ( GroupTest ) </li></ul>
-    <br>
-    <ul><li> R package: Cdf and locfdr Assisted Testing method (CLAT) 
-        <div class="container">       
-        <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#CLAT_instruction">Instruction</button>
-        <div id="CLAT_instruction" class="collapse">            
-        To install the package:<br>
-        <blockquote>
-            library(devtools)<br>
-            install_github("zhaozhg81/CLAT")<br>
-        </blockquote>    
-        </div>    
-            
-            <button type="button" class="btn btn-info" data-toggle="collapse" 
-                data-target="#CLAT_example">Example</button>
-        <div id="CLAT_example" class="collapse">                    
-    Example:<br>    
-    <blockquote>    
-      p <- 1000 <br>
-	   X <- c( rnorm(100, -2, 1), rnorm(100, 2, 1), rnorm(800, 0, ) ) <br>
-		q <- 0.05 <br>
-		     p.right <- pnorm( X, lower.tail=FALSE ) <br>
-				clat.right <- CLAT( p.right, q) <br>
-					      rejind <- which( clat.right$SigInd!=0 ) <br>
-							## Two-sided test <br>
-							p.right <- pnorm( X, lower.tail=FALSE ) <br>
-								   clat.right <- CLAT( p.right, q) <br>
-										 p.left <- pnorm( X, lower.tail=TRUE ) <br>
-											   clat.left <- CLAT( p.left, q) <br>
-													rejind <- c( which( clat.left$SigInd!=0 ), which(clat.right$SigInd!=0) )  <br>
-														  </blockquote>
-        </div>            
-                
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" class="brand-name">Zhigen Zhao</a>
+        <div class="brand-title">
+          Associate Professor, Charles E. Beury Research Fellow
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="publication.html">Research &amp; Publications</a>
+        <a href="students.html">Students</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="software.html">Software</a>
+        <a href="other.html">Other</a>
+      </nav>
     </div>
-    
-  </li></ul>
-    <br>
-    <ul><li> Bayesian LASSO with Zero Inflated Mixture Prior  </li></ul>
-    <br>
-    <ul><li> EBVariant: An Empirical Bayes testing procedure for detecting variants in analysis of next generation sequencing data. </li></ul>
-    <br>
+  </header>
 
-    <br>
-  </ul>
-          
-<div>
-<p align="center">
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=8206980; 
-var sc_invisible=0; 
-var sc_security="146ad3df"; 
-</script>
-<script type="text/javascript"
-src="http://www.statcounter.com/counter/counter.js"></script>
-<noscript><div class="statcounter"><a title="free hit
-counter" href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/8206980/0/146ad3df/0/"
-alt="free hit counter"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-</p>
+  <main class="main">
+
+    <section class="section">
+      <h3 class="section-title">Software</h3>
+
+      <ul>
+        <!-- rMAB / bandit code -->
+        <li>
+          <a href="https://github.com/zhaozhg81/rMAB" target="_blank" rel="noopener">
+            Randomized Multiarm Bandits (rMAB)
+          </a>
+          – R code for improved adaptive data collection in multi-arm bandits.
+        </li>
+
+        <!-- Rgpt -->
+        <li>
+          <a href="https://github.com/zhaozhg81/Rgpt" target="_blank" rel="noopener">
+            Rgpt: R Interface to ChatGPT
+          </a>
+          – R package providing an API for interacting with ChatGPT from R.
+          <details>
+            <summary>Show installation &amp; example</summary>
+            <p><strong>Setup:</strong> obtain an <code>OPENAI_API_KEY</code> from OpenAI and put it in <code>.Renviron</code> as <code>OPENAI_API_KEY=&lt;your key&gt;</code>.</p>
+            <pre><code>library(devtools)
+install_github("zhaozhg81/Rgpt")</code></pre>
+
+            <pre><code>library(Rgpt)
+Rgpt("Using R, write a sample code for linear model.")
+x = matrix(rnorm(12), nrow = 3, ncol = 4)
+LatexTable(3, 4, t(round(x, digits = 3)))</code></pre>
+          </details>
+        </li>
+
+        <!-- gSNR -->
+        <li>
+          <a href="https://github.com/zhaozhg81/gSNR" target="_blank" rel="noopener">
+            gSNR: Generalized Signal-to-Noise Ratio
+          </a>
+          – R package for generalized signal-to-noise ratio and associated tests.
+          <details>
+            <summary>Show installation &amp; example</summary>
+            <pre><code>library(devtools)
+install_github("zhaozhg81/gSNR")</code></pre>
+
+            <pre><code>library(gSNR)
+n     <- 1000
+H     <- 20
+m     <- n / H
+sigma <- 1
+
+p     <- 20
+
+set.seed(2)
+D     <- 1
+beta  <- array(0, c(p, D))
+beta  <- rnorm(p, 0, 1)
+
+X <- matrix(rnorm(p * n), c(n, p))
+
+Z <- X %*% beta
+Y <- sin(Z[, 1]) * exp(Z[, 1]) * 0.2 + sigma * rnorm(n, 0, 1)
+
+res    <- gSNR(X, Y, discrete = FALSE, pvalue = TRUE)
+res$stat
+res$pvalue
+
+ORD <- order(Y)
+Y2  <- array(0, n)
+Y2[ORD[1:floor(n / 3)]]                   <- 1
+Y2[ORD[(floor(n / 3) + 1):floor(2 * n / 3)]] <- 2
+Y2[ORD[(floor(2 * n / 3) + 1):n]]        <- 3
+
+res.2 <- gSNR(X, Y2, discrete = TRUE, pvalue = TRUE)
+res.2$stat
+res.2$pvalue</code></pre>
+          </details>
+        </li>
+
+        <!-- BET -->
+        <li>
+          <a href="https://github.com/zhaozhg81/BET" target="_blank" rel="noopener">
+            BET: Binary Expansion Test
+          </a>
+          – R package for binary expansion–based independence testing.
+        </li>
+
+        <!-- LassoSIR -->
+        <li>
+          <a href="https://github.com/zhaozhg81/LassoSIR" target="_blank" rel="noopener">
+            LassoSIR
+          </a>
+          – R package for sparse sliced inverse regression via Lasso.
+        </li>
+
+        <!-- GroupTest -->
+        <li>
+          <a href="https://github.com/zhaozhg81/GroupTest" target="_blank" rel="noopener">
+            GroupTest
+          </a>
+          – R package for multiple testing procedures with grouped hypotheses.
+        </li>
+
+        <!-- CLAT -->
+        <li>
+          <a href="https://github.com/zhaozhg81/CLAT" target="_blank" rel="noopener">
+            CLAT: CDF and locfdr Assisted Testing
+          </a>
+          – R package for CDF- and locfdr-assisted multiple testing.
+          <details>
+            <summary>Show installation &amp; example</summary>
+            <pre><code>library(devtools)
+install_github("zhaozhg81/CLAT")</code></pre>
+
+            <pre><code>library(CLAT)
+p <- 1000
+X <- c(rnorm(100, -2, 1),
+       rnorm(100,  2, 1),
+       rnorm(800,  0, 1))
+q <- 0.05
+
+## One-sided test
+p.right    <- pnorm(X, lower.tail = FALSE)
+clat.right <- CLAT(p.right, q)
+rejind     <- which(clat.right$SigInd != 0)
+
+## Two-sided test
+p.right    <- pnorm(X, lower.tail = FALSE)
+clat.right <- CLAT(p.right, q)
+p.left     <- pnorm(X, lower.tail = TRUE)
+clat.left  <- CLAT(p.left, q)
+rejind     <- c(which(clat.left$SigInd != 0),
+               which(clat.right$SigInd != 0))</code></pre>
+          </details>
+        </li>
+
+        <!-- Other named software without public URL yet -->
+        <li>
+          Bayesian LASSO with Zero Inflated Mixture Prior.
+        </li>
+
+        <li>
+          EBVariant: An empirical Bayes testing procedure for detecting variants in analysis of next generation sequencing data.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; 2025 Zhigen Zhao</div>
+      <div class="footer-links">
+        <a href="https://www.sbm.temple.edu" target="_blank" rel="noopener">Statistics Department</a>
+        <a href="https://www.sbm.temple.edu" target="_blank" rel="noopener">The Fox School</a>
+        <a href="https://www.temple.edu" target="_blank" rel="noopener">Temple University</a>
+      </div>
+    </div>
+  </footer>
+
 </div>
-
-
-<div id="footer">
-<ul>
-  <li><a href="http://www.sbm.temple.edu/dept/statistics/">Statistics
-Department </a></li>
-  <li><a href="http://sbm.temple.edu">The Fox School</a></li>
-  <li><a href="http://www.temple.edu">Temple University</a></li>
-</ul>
-</div>
-</div>
-
-</body></html>
+</body>
+</html>
