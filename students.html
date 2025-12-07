@@ -2,13 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Students – Zhigen Zhao</title>
+  <title>Students – Dr. Zhigen Zhao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Simple styling for award buttons; you can also move this into styles.css -->
+  <style>
+    .award-button {
+      display: inline-block;
+      margin-left: 0.4rem;
+      margin-top: 0.2rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 0.8rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .award-button:hover {
+      text-decoration: underline;
+    }
+    .section p {
+      max-width: 800px;
+    }
+  </style>
 </head>
+
 <body>
 <div class="page">
 
+  <!-- Header & navigation -->
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
@@ -17,6 +40,7 @@
           Associate Professor, Charles E. Beury Research Fellow
         </div>
       </div>
+
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="publication.html">Research &amp; Publications</a>
@@ -28,35 +52,120 @@
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="main">
 
     <section class="section">
-      <h3 class="section-title">Ph.D. Students (Chair of Dissertation Committee)</h3>
+      <h2 class="section-title">Students</h2>
+      <p>
+        Below is a list of Ph.D. students I have supervised as dissertation chair,
+        as well as Ph.D. students for whom I have served on the dissertation committee.
+        For my advisees, dissertation titles are clickable, and selected student
+        awards are displayed as clickable buttons.
+      </p>
+    </section>
+
+    <!-- ================================ -->
+    <!-- Ph.D. Dissertation Chair -->
+    <!-- ================================ -->
+    <section class="section">
+      <h3 class="section-title">Ph.D. Dissertation Chair</h3>
+
       <ul>
-        <li>Isaac Lim.</li>
-        <li>Kyle Chen.</li>
-        <li>Jian Sun.</li>
-        <li>Yu Tian. <em>Test of exchangeability under binary expansion.</em></li>
-        <li>Zhengkang Liang. <em>On the Bayesian Multiple Index Models.</em></li>
-        <li>Tong Wang. <em>Resampling-based Bias Adjustment for Adaptively Collected Data.</em></li>
-        <li>Yeil Kwon. <em>Nonparametric empirical Bayes simultaneous estimation for multiple variances.</em></li>
-        <li>Yanping Liu. <em>New approaches to multiple testing of grouped hypotheses.</em> (Co-chair.)</li>
-        <li>Victoria (Yu-Wei) Chang. <em>Sample size determination for a three-arm biosimilar trial.</em></li>
+        <li>
+          Isaac Lim (2025–present)
+        </li>
+
+        <li>
+          Kyle Chen (2023–present)
+        </li>
+
+        <li>
+          Jian Sun (2019–present)
+        </li>
+
+        <li>
+          Yu Tian (2017–2025).<br>
+          <!-- Replace # with the actual URL to Yu Tian's dissertation -->
+          <a href="#" target="_blank">
+            <i>Test of Exchangeability under Binary Expansion</i>
+          </a>
+        </li>
+
+        <li>
+          Tong Wang (2017–2022).<br>
+          <!-- Replace # with the actual URL to Tong Wang's dissertation -->
+          <a href="#" target="_blank">
+            <i>Resampling-based Bias Adjustment for Adaptively Collected Data</i>
+          </a>
+        </li>
+
+        <li>
+          Zhengkang Liang (2018–2022).<br>
+          <!-- Replace # with the actual URL to Zhengkang Liang's dissertation -->
+          <a href="#" target="_blank">
+            <i>On the Bayesian Multiple Index Models</i>
+          </a>
+        </li>
+
+        <li>
+          Yeil Kwon (2013–2018).<br>
+          <!-- Replace # with the actual URL to Yeil Kwon's dissertation -->
+          <a href="#" target="_blank">
+            <i>Nonparametric Empirical Bayes Simultaneous Estimation for Multiple Variances</i>
+          </a>
+        </li>
+
+        <li>
+          Yanping Liu (2009–2016). Co-chaired with Dr. Sanat K. Sarkar.<br>
+          <!-- Replace # with the actual URL to Yanping Liu's dissertation -->
+          <a href="#" target="_blank">
+            <i>New Approaches to Multiple Testing of Grouped Hypotheses</i>
+          </a>
+          <!-- Replace # with the actual URL to the award / conference page -->
+          <a href="#" target="_blank" class="award-button">
+            ICSA Student Travel Award (ICSA Applied Statistics Symposium, 2015)
+          </a>
+        </li>
+
+        <li>
+          Victoria (Yu-Wei) Chang (2009–2014).<br>
+          <!-- Replace # with the actual URL to Yu-Wei Chang's dissertation -->
+          <a href="#" target="_blank">
+            <i>Sample Size Determination for a Three-arm Biosimilar Trial</i>
+          </a>
+          <!-- Replace # with the corresponding official award / event links -->
+          <a href="#" target="_blank" class="award-button">
+            Josephs Heyse Publication Award (Temple University, 2015)
+          </a>
+          <a href="#" target="_blank" class="award-button">
+            Poster Award – Nonclinical Biostatistics Conference (2013)
+          </a>
+          <a href="#" target="_blank" class="award-button">
+            Poster Award – DIA/FDA Statistics Forum (2013)
+          </a>
+        </li>
       </ul>
     </section>
 
+    <!-- ================================ -->
+    <!-- Ph.D. Dissertation Committee -->
+    <!-- ================================ -->
     <section class="section">
-      <h3 class="section-title">Advisory Committees (Member)</h3>
-      <ul>
-        <li>Ying Liao</li>
+      <h3 class="section-title">Ph.D. Dissertation Committee</h3>
+
+      <ul class="committee-list">
+        <li>Erya Ouyang</li>
+        <li>Peiyu Liang</li>
+        <li>Yufan Dong</li>
+        <li>Dan Luo</li>
         <li>Hailey Park</li>
-        <li>Lanyu Lei</li>
-        <li>Michale D. Power</li>
         <li>Mengtian Li</li>
-        <li>Shinjini Nandi</li>
+        <li>Lanyu Lei</li>
+        <li>Michael D. Power</li>
+        <li>Shinjini Nandini</li>
         <li>Chao Han (Computer Science, Temple University)</li>
         <li>Yanhui Xu</li>
-        <li>Shinjini Nandi</li>
         <li>Zeda Li</li>
         <li>Scott Bruce</li>
         <li>Jie Zhang (Computer Science, NJIT)</li>
@@ -67,7 +176,7 @@
         <li>Bu Hyoung Lee</li>
         <li>Yiyong Fu</li>
         <li>Yihuan Xu</li>
-        <li>Wei Wang</li>
+        <li>Wei Wang (NJIT)</li>
         <li>Nicolle Clements</li>
         <li>Ibrahim Turkoz</li>
         <li>Elizabeth Stone</li>
@@ -78,27 +187,9 @@
       </ul>
     </section>
 
-    <section class="section">
-      <h3 class="section-title">My Mathematical Genealogy</h3>
-      <ul>
-        <li>Siméon Denis Poisson, École Polytechnique</li>
-        <li>↑ Michel Charles, École Polytechnique</li>
-        <li>↑ Hubert A. Newton, Yale University</li>
-        <li>↑ Eliakim H. Moore, Yale University</li>
-        <li>↑ Robert L. Moore, The University of Chicago</li>
-        <li>↑ John R. Kline, University of Pennsylvania</li>
-        <li>↑ Donald A. Flanders, University of Pennsylvania</li>
-        <li>↑ Jacob Wolfowitz, New York University</li>
-        <li>↑ Jack C. Kiefer, Columbia University</li>
-        <li>↑ Lawrence D. Brown, Cornell University</li>
-        <li>↑ James O. Berger, Cornell University</li>
-        <li>↑ Jiunn T. G. Hwang, Purdue University</li>
-        <li>↑ Zhigen Zhao, Cornell University</li>
-      </ul>
-    </section>
-
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div>&copy; 2025 Zhigen Zhao</div>
