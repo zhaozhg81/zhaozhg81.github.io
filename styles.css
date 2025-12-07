@@ -316,3 +316,37 @@ body {
     padding: 1.4rem;
   }
 }
+
+/* QR code bottom section */
+.qr-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.qr-container {
+  display: inline-block;
+}
+
+.qr-image {
+  width: 150px;
+  height: 150px;
+}
+
+/* Caption below QR */
+.qr-caption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .qr-image {
+    width: 120px;
+    height: 120px;
+  }
+  .qr-caption {
+    font-size: 0.8rem;
+  }
+}
+
